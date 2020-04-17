@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iRewards</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar nav-orange" role="navigation" aria-label="main navigation">
+        <div class="container-fluid navbar-brand">
+            <a class="navbar-item" href="#">
+                <img src="assets/images/logo1.png" alt="Logo" width="200" height="28">
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" data-toggle="collapse" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+
+            <div class="navbar-item container has-text-centered">			
+                <div class="column is-7">
+                    <div class="field">
+                        <p class="control is-expanded">
+                            <input class="input search" type="text" placeholder="Search for anything here">
+                        </p>
+
+                        <div class="search1">
+                            <div class="search-container">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                        <p></p>
+                    </div>
+                </div>
+                <div>
+				<div class="badge">1</div>
+                    <a href="#"><i class="has-text-white fa fa-shopping-cart" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="container-fluid navbar-end">
+                <div class="navbar-item has-text-white">
+								<div class="badge-bell has-text-black">1</div>
+				<i class="far fa-bell"></i>
+				</div>
+                <div class="navbar-item has-dropdown is-hoverable">
+					
+                    <a class="navbar-link has-text-white">
+					<i class="far fa-user-circle"></i> 
+					0123456789
+					</a>
+					<div class="search-container1">
+						<span class="has-text-white">8,500,000 Coins</span>
+					</div>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="myprofile.html">
+							My Account
+						</a>
+                        <a class="navbar-item">
+							My Purchases
+						</a>
+                        <a class="navbar-item">
+							Language
+						</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav id="hello" class="second-nav is-white shadow">
+        <div class="container">
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item is-active has-text-black" href="#">Electronic Devices</a>
+                    <a class="navbar-item has-text-black" href="#">Electronic Accessories</a>
+                    <a class="navbar-item has-text-black" href="#">Tv & Home Appliances</a>
+                    <a class="navbar-item has-text-black" href="#">Health & Beauty</a>
+                    <a class="navbar-item has-text-black" href="#">Babies & Toys</a>
+                    <a class="navbar-item has-text-black" href="#">Home & Lifestyle</a>
+                    <a class="navbar-item has-text-black" href="#">Fashion</a>
+                    <a class="navbar-item has-text-black" href="#">Sports & Outdoor</a>
+                    <a class="navbar-item has-text-black" href="#">Automative & Motorcycles</a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iRewards</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<style>
+		.m-10 {
+			margin: 5.4%;
+		}
+		.content h3 {
+			padding-top: 11px;
+			font-size: 1.5em;
+		}
+	</style>
+    <script> 
+    $(function(){
+      $("#includedContent").load("navigation.html"); 
+    });
+    </script> 
+  </head> 
+  <body> 
+     <div id="includedContent"></div>
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="columns">
+                    <div class="myprofile-container column is-3 has-text-left">
+                        <aside class="menu">
+                            <img class="round-img" src="http://via.placeholder.com/640x360" />
+                            <span class="tcenter">0123456789</span>
+                            <hr align="left" class="myprof-hr">
+                            <ul class="container-fluid menu-list">
+                                <li>
+									<a class="is-bold" href="#">My Account</a>
+								</li>
+                                <li class="container-fluid">
+									<a class="is-bold" href="myprofile.html">Profile</a>
+								</li>
+                                <li class="container-fluid">
+									<a class="is-bold is-active" href="#">Address</a>
+								</li>
+                                <li>
+									<a class="is-bold" href="#">Purchase History</a>
+								</li>
+                                <li>
+									<a class="is-bold" href="#">Notifications</a>
+								</li>
+                                <li>
+									<a class="is-bold" href="#">My Silvercoins</a>
+								</li>
+                            </ul>
+                        </aside>
+                    </div>
+                    <div class="column is-9 has-text-left">
+                        <div class="box content">
+                            <h3>Address</h3>
+							<div class="m-10"></div>
+                            <hr align="left">
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label">Full Name: </label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control">
+											<input id="c_fullname" disabled type="text" class="has-background-white is-bold input column is-8" required="" value="Sum Ting Wong">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label">Address: </label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control">
+											<input id="c_address" type="text" class="input column is-8" required="" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label">City: </label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control">
+											<input id="c_city" type="text" class="input column is-8" required="" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label">State: </label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control">
+											<input id="c_state" type="text" class="input column is-8" required="" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label">Postal Code: </label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control">
+											<input id="c_postal" type="text" class="input column is-8" required="" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label">Mobile Number: </label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control">
+											<input id="c_phone" disabled type="text" class="is-no-border has-background-white is-bold input column is-8" required="" value="0123456789">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal"></div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control">
+											<button class="button column is-3 is-medium buttonsave has-text-white">Save</button>                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                </div>
+                                <div class="field-body">
+                                    <div class="field">
+                                        <div class="control">
+											<code class="html">* Please ensure your address is correct as you are not allowed to change your address after you have saved.</code><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<div id="footer"></div>
+  </body> 
+</html>
+<script>
+ $("#footer").load("footer.html"); 
+</script>
