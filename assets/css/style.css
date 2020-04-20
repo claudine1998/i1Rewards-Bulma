@@ -32,6 +32,9 @@ display: block;
 span.tcenter,.search-container1 {
 	border-radius: 0.58rem;
 	height: 28px;
+}
+.has-text-gray {
+	color: #757575 !important;
 }	
 .search1 .fa-search,.search-container {
 	right: 7px;
@@ -59,7 +62,7 @@ code,span.tcenter {
 	position: absolute; 
 }
 .fix h4,div.fixed-btn {
-    top: 78%;
+    top: 67%;
 }
 .search1,.radio-item,.radio-item label:before {
 	position: relative;
@@ -211,7 +214,7 @@ hr {
 	background:#FF7A00;
 }
 .footer {
-	border-top: 2px solid orangered;
+	border-top: 2px solid #FF7A00;
 }
 .container-fluid {
 	padding-left: 6.94%;
@@ -246,10 +249,10 @@ svg.svg-inline--fa.fa-shopping-cart.fa-w-18 {
     top: 10%;
 }
 .fix-btn-spin {
-    right: -1.5%;	
-	line-height: 45px;
-	bottom: 17.5%;
-	z-index: 99;
+    right: -1.5%;
+    line-height: 45px;
+    bottom: 28.5%;
+    z-index: 99;
 }
 div.fixed-btn {
 	right: 0%;
