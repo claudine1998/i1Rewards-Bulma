@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+body {
+	overflow:hidden !important;
+}
+.sub-nav {
+    padding: .5rem 0.95rem !important;
+}
 /* LANDING PAGE CSS */
 p.column.is-2.f-size28.has-text-orange {
 	margin-bottom: 0rem;
@@ -324,7 +330,7 @@ code,span.tcenter {
 	color: white;
 }
 .fix h4,div.fixed-btn,.fix-btn-spin {
-	position: absolute; 
+	position: fixed; 
 }
 .fix h4,div.fixed-btn {
 	top: 67%;
@@ -393,6 +399,17 @@ label.label {
 }
 
 @media screen and (max-width: 719px) {
+img.logo-img-product {
+    padding: 22px;
+    height: 47% !important;
+    margin-top: 48%;
+}	
+.top-products-logo-first {
+    padding: 4px !important;
+    height: 54% !important;
+    margin-top: 38%;
+}
+
 	.tabs ul {width:100%;flex-direction:row;flex-wrap:wrap;}
 	.tabs li {width:50% !important;}
 	.fix-btn-spin {
@@ -548,12 +565,12 @@ svg.svg-inline--fa.fa-shopping-cart.fa-w-18 {
 	font-weight: normal;
 }
 .fix h4 {
-	transform: rotate(-90deg);
-    right: -47px;
+    transform: rotate(-90deg);
+    right: -26px;
     z-index: 1;
     font-weight: 900;
     width: max-content;
-    top: 10%;
+    top: 70%;
 }
 .fix-btn-spin {
     right: -1.5%;	
