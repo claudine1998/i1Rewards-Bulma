@@ -169,7 +169,7 @@ span.box-container {
 	font-size: 18px;
 	border-radius: 8px;
 	display: inline-block;
-	margin-top: 19px !important;
+	margin-top: 19px;
 }
 .slider-page.is-active {
 	background:white !important;
@@ -514,8 +514,8 @@ ul.is-unstyled {
 	font-weight: 500 !important;
 }
 body {
-	font-family: Roboto;
-	font-style: normal;
+	font-family: Roboto !important;
+	font-style: normal !important;
 	background-color: #F5F5F5;
 }
 
@@ -541,7 +541,9 @@ hr {
 	border-top: 2px solid #FF7A00;
 }
 .container-fluid {
-	padding-left: 6.94%;
+	/* padding-left: 6.94%; */
+    /* padding-right: 8.46%; */
+    padding-left: 9.1%;
     padding-right: 8.46%;
 }
 svg.svg-inline--fa.fa-shopping-cart.fa-w-18 {

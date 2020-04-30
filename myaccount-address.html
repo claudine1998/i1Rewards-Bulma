@@ -16,6 +16,9 @@
 			padding-top: 11px;
 			font-size: 1.5em;
 		}
+		input{
+			font-weight: 500;
+		}		
 	</style>
     <script> 
     $(function(){
@@ -56,106 +59,109 @@
                             </ul>
                         </aside>
                     </div>
-                    <div class="column is-9 has-text-left">
-                        <div class="box content">
-                            <h3 class="has-text-gray">Address</h3>
-							<div class="m-10"></div>
-                            <hr align="left">
-                            <div class="field is-horizontal">
-                                <div class="field-label is-normal">
-                                    <label class="label">Full Name: </label>
-                                </div>
-                                <div class="field-body">
-                                    <div class="field">
-                                        <div class="control">
-											<input id="c_fullname" disabled type="text" class="has-background-white is-bold input column is-8" required="" value="Sum Ting Wong">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="field is-horizontal">
-                                <div class="field-label is-normal">
-                                    <label class="label">Address: </label>
-                                </div>
-                                <div class="field-body">
-                                    <div class="field">
-                                        <div class="control">
-											<input id="c_address" type="text" class="input column is-8" required="" value="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="field is-horizontal">
-                                <div class="field-label is-normal">
-                                    <label class="label">City: </label>
-                                </div>
-                                <div class="field-body">
-                                    <div class="field">
-                                        <div class="control">
-											<input id="c_city" type="text" class="input column is-8" required="" value="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="field is-horizontal">
-                                <div class="field-label is-normal">
-                                    <label class="label">State: </label>
-                                </div>
-                                <div class="field-body">
-                                    <div class="field">
-                                        <div class="control">
-											<input id="c_state" type="text" class="input column is-8" required="" value="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="field is-horizontal">
-                                <div class="field-label is-normal">
-                                    <label class="label">Postal Code: </label>
-                                </div>
-                                <div class="field-body">
-                                    <div class="field">
-                                        <div class="control">
-											<input id="c_postal" type="text" class="input column is-8" required="" value="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="field is-horizontal">
-                                <div class="field-label is-normal">
-                                    <label class="label">Mobile Number: </label>
-                                </div>
-                                <div class="field-body">
-                                    <div class="field">
-                                        <div class="control">
-											<input id="c_phone" disabled type="text" class="is-no-border has-background-white is-bold input column is-8" required="" value="0123456789">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="field is-horizontal">
-                                <div class="field-label is-normal"></div>
-                                <div class="field-body">
-                                    <div class="field">
-                                        <div class="control">
-											<button class="button column is-3 is-medium buttonsave has-text-white">Save</button>                                          
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="field is-horizontal">
-                                <div class="field-label is-normal">
-                                </div>
-                                <div class="field-body">
-                                    <div class="field">
-                                        <div class="control">
-											<code class="html">* Please ensure your address is correct as you are not allowed to change your address after you have saved.</code><br>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+					<div class="column is-9 has-text-left">
+						<form action="javascript:console.log('succes')">  
+							<div class="box content">
+								<h3 class="has-text-gray">Address</h3>
+								<div class="m-10"></div>
+								<hr align="left">
+								<div class="field is-horizontal">
+									<div class="field-label is-normal">
+										<label class="label">Full Name: </label>
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<div class="control">
+												<input id="c_fullname" disabled type="text" class="has-background-white is-bold input column is-8" required="" value="Sum Ting Wong">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="field is-horizontal">
+									<div class="field-label is-normal">
+										<label class="label">Address: </label>
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<div class="control">
+												<input id="c_address" type="text" class="input column is-8" required="" value="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="field is-horizontal">
+									<div class="field-label is-normal">
+										<label class="label">City: </label>
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<div class="control">
+												<input id="c_city" type="text" class="input column is-8" required="" value="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="field is-horizontal">
+									<div class="field-label is-normal">
+										<label class="label">State: </label>
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<div class="control">
+												<input id="c_state" type="text" class="input column is-8" required="" value="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="field is-horizontal">
+									<div class="field-label is-normal">
+										<label class="label">Postal Code: </label>
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<div class="control">
+												<input id="c_postal" type="text" class="input column is-8" required="" value="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="field is-horizontal">
+									<div class="field-label is-normal">
+										<label class="label">Mobile Number: </label>
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<div class="control">
+												<input id="c_phone" disabled type="text" class="is-no-border has-background-white is-bold input column is-8" required="" value="0123456789">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="field is-horizontal">
+									<div class="field-label is-normal"></div>
+									<div class="field-body">
+										<div class="field">
+											<div class="control">
+												<button class="button column is-3 is-medium buttonsave has-text-white" type="submit">Save</button>                                          
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="field is-horizontal">
+									<div class="field-label is-normal">
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<div class="control">
+												<code class="html">* Please ensure your address is correct as you are not allowed to change your address after you have saved.</code><br>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					
                 </div>
             </div>
         </div>
@@ -163,6 +169,23 @@
 	<div id="footer"></div>
   </body> 
 </html>
+<script>  
+$( "form" ).submit(function( event ) {  
+	var address= $('#c_address').val();
+	var city = $('#c_city').val();
+	var state = $('#c_state').val();
+	var postal = $('#c_postal').val();
+	var phone = $('#c_phone').val();
+
+	$('input').attr('readonly',true);
+	$("input").css("border", "none");
+	$("input").css("color", "black");
+	$("input").css("font-weight", "500");
+	$("button[type=submit]").css("display", "none");
+	$("code").css("display", "none");
+
+});  
+</script>  
 <script>
  $("#footer").load("footer.html"); 
 </script>
