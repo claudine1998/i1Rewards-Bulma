@@ -78,7 +78,14 @@ figure.image.bg-small {
     margin-right: 1rem;
     margin-top: 1rem;
 }
+	@media screen and (min-width: 1150px) {
+.cart,.redeem {
+    width: 180px !important;
+    height: 50px;	
+}
+	}
 	@media screen and (min-width: 720px) {
+
 .ratings {
     padding-top: 5px;
 }
@@ -172,10 +179,7 @@ figure.image.main-bg.is-5by5 {
     background: #F5F5F5 !important;
     border: 2px solid #FF7A00 !important;
 }
-.cart,.redeem {
-    width: 180px !important;
-    height: 50px;	
-}
+
 
 .column.is-3.cart-button {
     width: 23%;

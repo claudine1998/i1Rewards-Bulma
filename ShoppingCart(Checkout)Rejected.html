@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>iRewards</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+      <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-divider@0.2.0/dist/css/bulma-divider.min.css">
+      <link rel="stylesheet" href="assets/css/sale.css">
+      <link rel="stylesheet" href="assets/css/Shoppingcart.css">
+      <script> 
+         $(function(){
+         $("#includedContent").load("navigation.html"); 
+         });
+      </script> 
+	  <style>
+		.text-underline {
+			text-decoration:underline;
+		}
+	  </style>
+   </head>
+   <body>
+      <div id="includedContent"></div>
+      <section class="hero is-fullheight">
+         <div class="hero-body">
+         <div class="container has-text-centered">
+            <div class="columns">
+               <div class="column is-12 has-text-left">
+                  <div class="has-text-left">
+                     <div class="box content shadow">
+                        <h3 class="has-text-black f-500">SHOPPING CART</h3>
+                        <div class="is-divider divider-orange"></div>
+                        <div class="field is-horizontal">
+                           <table class="table">
+                              <thead>
+                                 <tr>
+                                    <th class="f-size16 has-text-gray" scope="col">PRODUCT DETAILS</th>
+                                    <th class="f-size16 has-text-gray" scope="col">Variation</th>
+                                    <th class="f-size16 has-text-gray" scope="col">Price</th>
+                                    <th class="f-size16 has-text-gray" scope="col">Quantity</th>
+                                    <th class="f-size16 has-text-gray" scope="col">Total</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td>
+                                       <img src="assets/images/product.png" width="100"/>
+                                       <p class="has-text-black f-500 f-size14 m-1">Rick and Morty Wudda Lubba Dub Dub They'll just fall<br/> right out of my ass!<br><br>
+                                          <a class="is-bold is-small description f-500 f-size14 has-text-danger">
+                                          Remove
+                                          </a>	  
+                                       </p>
+                                    </td>
+                                    <td class="variation-dropdown">
+                                       <div class="dropdown" id="variation-1">
+                                          <div class="dropdown-trigger">
+                                             <button class="button dropdown-bnone" aria-haspopup="true" aria-controls="dropdown-menu">
+                                             <span>32,Yellow</span>
+                                             <span class="icon is-small">
+                                             <i class="fas fa-caret-down"></i>
+                                             </span>
+                                             </button>
+                                          </div>
+                                          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                             <div class="dropdown-content">
+                                                <a href="#" class="dropdown-item">
+                                                32,Yellow
+                                                </a>
+                                                <a class="dropdown-item">
+                                                32,Yellow
+                                                </a>
+                                                <a href="#" class="dropdown-item is-active">
+                                                32,Yellow
+                                                </a>
+                                                <a href="#" class="dropdown-item">
+                                                32,Yellow
+                                                </a>
+                                                <hr class="dropdown-divider">
+                                                <a href="#" class="dropdown-item">
+                                                32,Yellow
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </td>
+                                    <td>
+                                       <p class="has-text-black f-500 f-size14">8000</p>
+                                    </td>
+                                    <td>
+                                       <div class="buttons has-addons">
+                                          <button class="button" id="decrement-number">-</button>
+                                          <button class="button" id="value-quantity" class="value-quantity">1</button>
+                                          <button class="button" id="increment-number">+</button>
+                                       </div>
+                                    </td>
+                                    <td>
+                                       <p class="has-text-black f-500 f-size14">8000</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <img src="assets/images/landing/icons8_picture_96px_3.png" width="100"/>
+                                       <p class="has-text-black f-500 f-size14 m-1">Rick and Morty Wudda Lubba Dub Dub They'll just fall<br/> right out of my ass!<br><br>
+                                          <a class="is-bold is-small description f-500 f-size14 has-text-danger">
+                                          Remove
+                                          </a>	  
+                                       </p>
+                                    </td>
+                                    <td>
+                                       <div class="dropdown" id="variation-2">
+                                          <div class="dropdown-trigger">
+                                             <button class="button dropdown-bnone" aria-haspopup="true" aria-controls="dropdown-menu">
+                                             <span>32,Yellow</span>
+                                             <span class="icon is-small">
+                                             <i class="fas fa-caret-down"></i>
+                                             </span>
+                                             </button>
+                                          </div>
+                                          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                             <div class="dropdown-content">
+                                                <a href="#" class="dropdown-item">
+                                                32,Yellow
+                                                </a>
+                                                <a class="dropdown-item">
+                                                32,Yellow
+                                                </a>
+                                                <a href="#" class="dropdown-item is-active">
+                                                32,Yellow
+                                                </a>
+                                                <a href="#" class="dropdown-item">
+                                                32,Yellow
+                                                </a>
+                                                <hr class="dropdown-divider">
+                                                <a href="#" class="dropdown-item">
+                                                32,Yellow
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </td>
+                                    <td>
+                                       <p class="has-text-black f-500 f-size14">8000</p>
+                                    </td>
+                                    <td>
+                                       <div class="buttons has-addons">
+                                          <button class="button" id="decrement-number1">-</button>
+                                          <button class="button" id="value-quantity1" class="value-quantity">2</button>
+                                          <button class="button" id="increment-number1">+</button>
+                                       </div>
+                                    </td>
+                                    <td>
+                                       <p class="has-text-black f-500 f-size14">16000</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <img src="assets/images/landing/Apple-iPhone-11-Pro-Gold.jpg" width="100"/>
+                                       <p class="has-text-black f-500 f-size14 m-1">Rick and Morty Wudda Lubba Dub Dub They'll just fall<br/> right out of my ass!<br><br>
+                                          <a class="is-bold is-small description f-500 f-size14 has-text-danger">
+                                          Remove
+                                          </a>	  
+                                       </p>
+                                    </td>
+                                    <td>
+                                       <div class="dropdown" id="variation-3">
+                                          <div class="dropdown-trigger">
+                                             <button class="button dropdown-bnone" aria-haspopup="true" aria-controls="dropdown-menu">
+                                             <span>32,Yellow</span>
+                                             <span class="icon is-small">
+                                             <i class="fas fa-caret-down"></i>
+                                             </span>
+                                             </button>
+                                          </div>
+                                          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                             <div class="dropdown-content">
+                                                <a href="#" class="dropdown-item">
+                                                32,Yellow
+                                                </a>
+                                                <a class="dropdown-item">
+                                                32,Yellow
+                                                </a>
+                                                <a href="#" class="dropdown-item is-active">
+                                                32,Yellow
+                                                </a>
+                                                <a href="#" class="dropdown-item">
+                                                32,Yellow
+                                                </a>
+                                                <hr class="dropdown-divider">
+                                                <a href="#" class="dropdown-item">
+                                                32,Yellow
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </td>
+                                    <td>
+                                       <p class="has-text-black f-500 f-size14">8000</p>
+                                    </td>
+                                    <td>
+                                       <div class="buttons has-addons">
+                                          <button class="button" id="decrement-number2">-</button>
+                                          <button class="button" id="value-quantity2" class="value-quantity">1</button>
+                                          <button class="button" id="increment-number2">+</button>
+                                       </div>
+                                    </td>
+                                    <td>
+                                       <p class="has-text-black f-500 f-size14">8000</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <img src="assets/images/landing/icons8_picture_96px_4.png" width="100"/>
+                                       <p class="has-text-black f-500 f-size14 m-1">Rick and Morty Wudda Lubba Dub Dub They'll just fall<br/> right out of my ass!<br><br>
+                                          <a class="is-bold is-small description f-500 f-size14 has-text-danger">
+                                          Remove
+                                          </a>	  
+                                       </p>
+                                    </td>
+                                    <td>
+                                       <div class="dropdown" id="variation-4">
+                                          <div class="dropdown-trigger">
+                                             <button class="button dropdown-bnone" aria-haspopup="true" aria-controls="dropdown-menu">
+                                             <span>32,Yellow</span>
+                                             <span class="icon is-small">
+                                             <i class="fas fa-caret-down"></i>
+                                             </span>
+                                             </button>
+                                          </div>
+                                          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                             <div class="dropdown-content">
+                                                <a href="#" class="dropdown-item">
+                                                32,Yellow
+                                                </a>
+                                                <a class="dropdown-item">
+                                                32,Yellow
+                                                </a>
+                                                <a href="#" class="dropdown-item is-active">
+                                                32,Yellow
+                                                </a>
+                                                <a href="#" class="dropdown-item">
+                                                32,Yellow
+                                                </a>
+                                                <hr class="dropdown-divider">
+                                                <a href="#" class="dropdown-item">
+                                                32,Yellow
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </td>
+                                    <td>
+                                       <p class="has-text-black f-500 f-size14">8000</p>
+                                    </td>
+                                    <td>
+                                       <div class="buttons has-addons">
+                                          <button class="button" id="decrement-number3">-</button>
+                                          <button class="button" id="value-quantity3" class="value-quantity">1</button>
+                                          <button class="button" id="increment-number3">+</button>
+                                       </div>
+                                    </td>
+                                    <td>
+                                       <p class="has-text-black f-500 f-size14">8000</p>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                        <div class="is-divider is-divider-full-width dotted has-text-gray"></div>
+                        <h3 class="has-text-black f-500">CHECKOUT</h3>
+                        <div class="is-divider is-divider-full-width dotted has-text-gray"></div>
+                        <div class="field is-horizontal pro-checkout">
+                           <div class="field-body">
+                              <div class="field">
+                                 <div class="control">
+                                    <div class="columns">
+                                       <div class="column is-vcentered is-2">
+                                          <div class='column third'>
+                                             <span class="has-text-black f-500 f-size14">Delivery Address: </span>
+                                          </div>
+                                       </div>
+                                       <div class="column is-vcentered is-4 vaiation">
+                                          <div class='column third'>
+                                             <span class="has-text-gray f-size16 f500">Unit 1, Bangunan Bunga, Jalan Api 1, Taman Katak, Kuala Lumpur, 52100, Wilayah Persekutuan</span>															
+                                          </div>
+                                       </div>
+                                       <div class="column is-vcentered is-3" align="right">
+                                          <div class='column third'>
+                                             <p class="has-text-gray f-500 f-size14">Total item(s)</p>
+                                          </div>
+                                       </div>
+                                       <div class="column is-vcentered is-2" align="right">
+                                          <div class='column third'>
+                                             <p class="has-text-gray f-500 f-size14">5</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- end -->
+                        <div class="field is-horizontal pro-checkout">
+                           <div class="field-body">
+                              <div class="field">
+                                 <div class="control">
+                                    <div class="columns test">
+                                       <div class="column is-8 total-width">
+                                          <div class="is-pulled-right">
+                                             <p class="has-text-gray f-500 f-size14">Total</p>
+                                          </div>
+                                       </div>
+                                       <div class="column is-2 total">
+                                          <div class="is-pulled-right">
+                                             <p class="has-text-orange f-500 f-size18">50,000</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="is-divider is-divider-full-width dotted has-text-gray"></div>
+                        <div class="buttons is-right">
+                           <button id="btn" class="button is-medium buttonsave redeem has-text-white">Purchase</button>
+                        </div>
+                     </div>
+                     <br>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="modal" id="myModal">
+         <div class="modal-background"></div>
+         <div class="modal-card">
+            <section class="modal-card-body">
+               <div class="box content modall">
+                  <div class="is-pulled-right">
+                     <button class="delete delete" aria-label="close" data-bulma-modal="close"></button>
+                  </div>
+                  <h2 class="has-text-danger has-text-centered">Insufficient Balance</h2>
+                  <p class="has-text-centered has-text-gray"><span class="is-bold">You have insufficient silvercoins to make this purchase.</span>	
+                     <br>Please ensure you have enough silvercoins and try again. <br>You may purchase silvercoins to topup to the amount required or you may click <a href="#" class="text-underline">here</a> to find out how to earn more silvercoins.
+                  </p>
+                  <br><br>
+                  <button id="btn" class="button buttonsave is-fullwidth has-text-white">
+                  <span>BUY SILVERCOINS</span>
+                  </button>
+                  <br>
+                  <div class="has-text-centered">
+                     <a class="has-text-centered text-underline" href="#">Continue Shopping</a>
+                  </div>
+                  </p>
+               </div>
+            </section>
+         </div>
+      </div>
+      <div id="footer"></div>
+   </body>
+</html>
+<script>
+   class BulmaModal {
+   constructor(selector) {
+   this.elem = document.querySelector(selector)
+   this.close_data()
+   }
+   
+   show() {
+   this.elem.classList.toggle('is-active')
+   this.on_show()
+   }
+   
+   close() {
+   this.elem.classList.toggle('is-active')
+   this.on_close()
+   }
+   
+   close_data() {
+   var modalClose = this.elem.querySelectorAll("[data-bulma-modal='close'], .modal-background")
+   var that = this
+   modalClose.forEach(function(e) {
+   e.addEventListener("click", function() {
+   
+   that.elem.classList.toggle('is-active')
+   
+   var event = new Event('modal:close')
+   
+   that.elem.dispatchEvent(event);
+   })
+   })
+   }
+   
+   on_show() {
+   var event = new Event('modal:show')
+   
+   this.elem.dispatchEvent(event);
+   }
+   
+   on_close() {
+   var event = new Event('modal:close')
+   
+   this.elem.dispatchEvent(event);
+   }
+   
+   addEventListener(event, callback) {
+   this.elem.addEventListener(event, callback)
+   }
+   }
+   
+   var btn = document.querySelector("#btn")
+   var mdl = new BulmaModal("#myModal")
+   
+   btn.addEventListener("click", function () {
+   mdl.show()
+   $(".hero.is-fullheight").addClass("wrapper");
+   })
+   
+   mdl.addEventListener('modal:show', function() {
+   
+   console.log("opened")
+   })
+   mdl.addEventListener("modal:close", function() {
+   $(".hero.is-fullheight").removeClass("wrapper");
+   console.log("closed")
+   })
+   $('#increment-number').click(function() {
+   var value = $('#value-quantity').text();
+   value++;
+   $('#value-quantity').text(value)
+   return false;
+   });
+   $('#decrement-number').click(function() {
+   var value = $('#value-quantity').text();
+   value--;
+   $('#value-quantity').text(value)
+   return false;
+   });
+   $('#increment-number1').click(function() {
+   var value = $('#value-quantity1').text();
+   value++;
+   $('#value-quantity1').text(value)
+   return false;
+   });
+   $('#decrement-number1').click(function() {
+   var value = $('#value-quantity1').text();
+   value--;
+   $('#value-quantity1').text(value)
+   return false;
+   });
+   $('#increment-number2').click(function() {
+   var value = $('#value-quantity2').text();
+   value++;
+   $('#value-quantity2').text(value)
+   return false;
+   });
+   $('#decrement-number2').click(function() {
+   var value = $('#value-quantity2').text();
+   value--;
+   $('#value-quantity2').text(value)
+   return false;
+   });
+   $('#increment-number3').click(function() {
+   var value = $('#value-quantity3').text();
+   value++;
+   $('#value-quantity3').text(value)
+   return false;
+   });
+   $('#decrement-number3').click(function() {
+   var value = $('#value-quantity3').text();
+   value--;
+   $('#value-quantity3').text(value)
+   return false;
+   });
+</script>
+<script>
+   var dropdown = document.querySelector('#variation-1');
+   
+   dropdown.addEventListener('click', function(event) {
+   event.stopPropagation();
+   dropdown.classList.toggle('is-active');
+   });
+   
+   var dropdown2 = document.querySelector('#variation-2');
+   dropdown2.addEventListener('click', function(event) {
+   event.stopPropagation();
+   dropdown2.classList.toggle('is-active');
+   });
+   var dropdown3 = document.querySelector('#variation-3');
+   dropdown3.addEventListener('click', function(event) {
+   event.stopPropagation();
+   dropdown3.classList.toggle('is-active');
+   });
+   var dropdown4 = document.querySelector('#variation-4');
+   dropdown4.addEventListener('click', function(event) {
+   event.stopPropagation();
+   dropdown4.classList.toggle('is-active');
+   });
+</script>
+<script>
+   $("#footer").load("footer.html"); 
+</script>

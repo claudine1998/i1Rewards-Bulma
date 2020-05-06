@@ -1,0 +1,197 @@
+	.text-underline {
+		text-decoration: underline !important;
+	}
+	.variation-dropdown {
+		width:35%;
+	}
+	.m-1 {
+		margin-left: 1%;
+	}
+	.modal-background,button.delete.delete {
+		background:none !important;
+	}
+	span.tcenter {
+		top: 27px !important;
+	}
+	.tabs.is-one-quarter-desktop.shadow {
+		margin-top: 18px;
+	}
+	.column.description{
+		padding: inherit !important;
+	}
+	.is-margin-right {
+		margin-right: 1.5rem;
+	}
+	button.button.dropdown-bnone {
+		border: none !important;
+	}
+	.field.is-horizontal.pro-checkout {
+		margin-left: 1%;
+	}
+	.column.is-vcentered.is-3.vaiation {
+		width: 31.4%;
+	}
+	.price {
+		width: 11%;
+	}
+	@media screen and (min-width: 900px) {
+
+	.columns.test {
+		margin-top: -4%;
+	}
+	.column.is-2.total {
+		width: 23.7%;
+		margin-top: 0%;
+	}
+	button.value-quantity {
+		width: 27%;
+	}
+	.column.is-vcentered.is-2.quantity {
+		width: 23%;
+	}
+	.total-width {
+		width: 70.66667% !important;
+	}
+	}
+	.is-divider.is-divider-full-width.dotted {
+		border-top: 1px dashed;
+	}
+
+
+
+	table td {
+		text-align: center;
+		vertical-align: middle;
+		padding: 5px;
+		position: relative;
+	}
+
+	table td img {
+		vertical-align: middle;
+		display: inline-block;
+	}
+
+	table td p {
+		display: inline-block;
+		vertical-align: middle
+	}
+
+
+	table {
+	  border-collapse: collapse;
+	  margin: 0;
+	  padding: 0;
+	  width: 100%;
+	}
+
+	table caption {
+	  font-size: 1.5em;
+	  margin: .5em 0 .75em;
+	}
+
+	table tr {
+	  padding: .35em;
+	}
+
+	table th,
+	table td {
+	  padding: .625em;
+	  text-align: center;
+	}
+
+	table th {
+	  font-size: .85em;
+	  letter-spacing: .1em;
+	  text-transform: uppercase;
+	}
+
+	@media screen and (max-width: 600px) {
+	  table {
+		border: 0;
+	  }
+
+	  table caption {
+		font-size: 1.3em;
+	  }
+	  
+	  table thead {
+		border: none;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	  }
+	  
+	  table tr {
+		border-bottom: 3px solid #ddd;
+		display: block;
+		margin-bottom: .625em;
+	  }
+	  
+	  table td {
+		border-bottom: 1px solid #ddd;
+		display: block;
+		font-size: .8em;
+		text-align: right;
+	  }
+	  
+	  table td::before {
+		/*
+		* aria-label has no advantage, it won't be read inside a table
+		content: attr(aria-label);
+		*/
+		content: attr(data-label);
+		float: left;
+		font-weight: bold;
+		text-transform: uppercase;
+	  }
+	  
+	  table td:last-child {
+		border-bottom: 0;
+	  }
+	}
+	td {
+		border: none !important;
+	}
+	th {
+		border: none !important;
+	}
+	.wrapper{
+	background: rgba(226, 226, 226, 0.3) !important;
+	backdrop-filter: blur(4px);
+		-webkit-filter: blur(2px);
+		-ms-filter: blur(2px);
+		-moz-filter: blur(2px);
+		-o-filter: blur(2px);
+		filter: blur(2px);
+	} 
+	.modal-card-body {
+		background: none !important;
+	}
+	.box.content.modall{
+	padding: 46px !important;
+	box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.2) !important;
+	}
+	.delete::after, .delete::before, .modal-close::after, .modal-close::before {
+		background-color: black !important;
+		content: "";
+		display: block;
+		left: 50%;
+		position: absolute;
+		transform: translateX(-50%) translateY(-50%) rotate(45deg);
+		transform-origin: center center;
+	}
+	.delete, .modal-close {
+		margin-top: -202%;
+		right: -36px;
+	}
+	.delete::after, .modal-close::after {
+		height: 75% !important;
+	}
+	.delete::before, .modal-close::before {
+		height: 2px;
+		width: 81% !important;
+	}
