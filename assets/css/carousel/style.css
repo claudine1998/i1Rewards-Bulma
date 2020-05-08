@@ -103,8 +103,8 @@ body {
 .gallery-slider__thumbnails {
     position: relative;
     /* top: auto; */
-    top: -43% !important;
-    left: 185px;
+    /* top: -43% !important; */
+    /* left: 185px; */
     width: 100%;
     z-index: 4;
     -webkit-transition: all 0.8s;
