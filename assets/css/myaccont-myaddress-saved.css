@@ -1,0 +1,155 @@
+
+		.box.content {
+			display: table;
+		}
+		.is-white {
+			background:white !important;
+		}
+.myprofile-container {
+    padding-top: 12px !important;
+}
+
+span.flash-sale.has-text-orange.f-size32 {
+    padding: 6%;
+}
+.column.is-3.has-text-left {
+    padding-top: 35px;
+}
+@media screen and (max-width: 1000px){
+nav.navbar.nav-orange.shadow-nav.is-hidden-mobile {
+    display: none !important;
+}
+}
+@media screen and (max-width: 768px){
+
+
+span.is-3.flash-sale.f-size32.f-500.gap-is3 {
+    padding-left: 20px !important;
+}
+svg.svg-inline--fa.fa-chevron-left.fa-w-10.f-size18 {
+    margin-top: 13px !important;
+    position: absolute;
+}
+.is-divider, .is-divider-vertical {
+    margin: 0rem 0 !important;
+}
+.mains {
+    padding-top: 13px;
+}
+.hero-body {
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 0rem 0rem !important;
+}
+.container.has-text-centered.is-white {
+    padding-left: 4%;
+    padding-right: 5%;
+}
+.myaccount {
+    height: 90vh;;
+}
+.fix {
+display:none ;
+}
+}
+@media screen and (min-width: 769px){
+div#insertmyprofile {
+    min-height: 500px;
+}
+.column.is-6.is-pulled-left {
+    padding-left: -5px;
+    margin-left: -6%;
+}
+button.is-hidden-mobile.is-pulled-right.button.is-medium.buttonsave.p-30.test {
+    background: white;
+}
+.column.is-6.is-pulled-left {
+    float: left;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.is-bnone {
+        margin-bottom: -0.3rem !important;
+}
+p.control.is-grouped.state {
+    width: 118% !important;
+}
+button.button.is-medium.buttonsave {
+    width: 150px;
+    margin-right: 9px;
+}
+
+	.p-30 {
+		padding-left:31px !important;
+	}
+p.control.is-grouped.is-hidden-mobile {
+    padding-left: 4	0px;
+}
+
+span.input-horizontal {
+    padding-top: 9px !important;
+    padding-right: 9px !important;
+}
+.aside-menus {
+    flex: none;
+    width: 20% !important;
+}
+ul.container-fluid.menu-list {
+    padding-top: 5%;
+}
+.is-divider-vertical {
+    padding: 0rem !important;
+}
+div#myprofile {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.mains {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.is-divider{
+     margin: 1rem 0 !important;
+ 
+}
+.myaccount {
+    height: 600px;
+}
+
+
+}
+input {
+    border-radius: 32px !important;
+}
+.container.has-text-centered.is-white {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+button.buttonsave {
+    border-radius: 32px !important;
+}
+button.button.column.is-3.is-medium.buttonsave.has-text-white {
+    color: #FF7A00 !important;
+    background-color: white !important;
+    border: 1px solid #FF7A00;
+}
+button.button.cart.has-text-white {
+    color: #FF7A00 !important;
+    background-color: white !important;
+    border: 1px solid #FF7A00;
+}
+button.button.cart.has-text-white {
+    height: 42px !important;
+    color: #FF7A00 !important;
+    background-color: white !important;
+    border: 1px solid #FF7A00;
+    width: 152px;
+    border-radius: 32px !important;
+    /* width: 58%; */
+}
+.f-10 {
+    font-size: 10px !important;
+}
+#insertmyprofile {
+display:none;
+} 

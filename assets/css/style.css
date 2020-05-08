@@ -183,7 +183,7 @@ span.box-container {
 	text-align: center;
 }
 .gray {
-	background: #C4C4C4;
+	background: #C4C4C4 !important;
 }
 .red {
 	background: #E30613;
@@ -516,7 +516,7 @@ ul.is-unstyled {
 body {
 	font-family: Roboto !important;
 	font-style: normal !important;
-	background-color: #F5F5F5;
+	background-color: #FFF;
 }
 
 hr {
@@ -644,7 +644,8 @@ svg.svg-inline--fa.fa-bell.fa-w-14 {
 }
 .menu-list a.is-active {
 	background-color: transparent !important;
-	color: orange !important;
+	/* color: orange !important; */
+	color: #2D91EE;
 }
 .is-bold {
 	font-weight:600;
@@ -685,5 +686,5 @@ nav.second-nav.is-white.shadow {
     margin: 0.4rem 0;
 }
 .myprofile-container {
-    padding-top: 47px !important;
+    padding-top: 47px;
 }
