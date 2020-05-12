@@ -225,8 +225,9 @@ a.pagination-link,a.pagination-previous,a.pagination-next {
     border-radius: 0px !important;
 }
 .pagination-link.is-current {
-background: #FF7A00 !important;
-border: 1px solid #FF7A00 !important;
+    color: #FF7A00 !important;
+    background: none !important;
+    /* border: 1px solid #FF7A00 !important; */
 }
 
 /* img.star-img { */

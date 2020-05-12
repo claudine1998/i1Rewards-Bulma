@@ -1,3 +1,43 @@
+tr {
+	border-bottom:1px solid;
+}
+img.close-icon {
+    position: absolute;
+    margin: 14px 0px 0px 14px;
+    /* margin-top: 10px; */
+}
+.dot {
+    height: 41px;
+    width: 42px;
+    /* background-color: #bbb; */
+    border-radius: 50%;
+    display: inline-block;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+}
+button#btn1 {
+    border: 1px solid #FF7A00;
+    background: white;
+    border-radius: 32px !important;
+}
+h2.has-text-orange.has-text-centered.flash-sale {
+    color: #FF7A00;
+}
+button.button.purchase {
+    border-radius: 0px !important;
+}	  
+.column.is-one-quarter {
+    margin-left: 14px;
+}	 
+.no-border {
+    border-bottom: none;
+} 
+
+/* end */
+
+
+
+
 	.text-underline {
 		text-decoration: underline !important;
 	}
@@ -35,6 +75,33 @@
 		width: 11%;
 	}
 	@media screen and (min-width: 900px) {
+	/* start */
+button.button.is-medium.buttonsave.redeem.has-text-white.purchase {
+    height: 74px;
+}	
+	.level-item {
+    padding-left: 24px;
+}
+	  .column.is-12.levels {
+    padding: 0rem !important;
+}
+.column.is-12.mains {
+    padding-bottom: 0rem;
+}	
+.dropdown-content {
+    width: 651px;
+}	
+.dropdown {
+    border: 1px solid #C4C4C4;
+}	
+	.column.is-3.deliver {
+    width: 10% !important;
+}
+.column.is-12.mains {
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+}
+	/* end */
 
 	.columns.test {
 		margin-top: -4%;

@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+.is-review.is-active {
+    border-color: #FF7A00;
+    color: #FF7A00 !important;
+    font-weight: bold;
+}
+.dotted {
+		border-top: 1px dashed;
+	}
 body {
 	overflow:hidden !important;
 }
@@ -62,7 +69,7 @@ strong {
 }		
 
 .ribbon {
-    margin-right: 20px;
+    margin-right: -36px;
 }	
 .is-blue {
 	background-color: #2D91EE !important;
@@ -128,7 +135,7 @@ progress{
 span.percentage {
     font-size: 16px !important;
     position: absolute;
-    top: 87.6%;
+    top: 89.6%;
     left: 29%;
     font-size: 12px;
     z-index: 1;
@@ -303,6 +310,13 @@ span.tcenter,.search-container1 {
 	padding: 0.6em 1em !important;
     border-bottom-color: #F5F5F5;
 }
+.tabs.one a {
+	width:8%;
+	border-bottom-width: 4px !important;
+	margin-bottom: -12px !important;
+	padding: 0.6em 1em !important;
+    border-bottom-color: #F5F5F5;
+}
 li.is-active.column.is-3 {
 	padding: 0px !important;
 }
@@ -342,13 +356,13 @@ svg.svg-inline--fa.fa-question-circle.fa-w-16 {
     font-size: 22px;
 }
 .button {
-    border-radius: 0 !important;
+    border-radius: 0px !important;
 }
 .fix-btn-spin,div.fixed-btn {
     height: 128px;
 }
 .has-text-orange {
-    color: #FF7A00 !important;
+    color: #FF7A00;
 }
 .shadow-nav {
     box-shadow: 0 13px 14px -6px #222;
@@ -399,6 +413,9 @@ label.label {
 }
 
 @media screen and (max-width: 719px) {
+.fix {
+    display: none;
+}
 img.logo-img-product {
     padding: 22px;
     height: 47% !important;
@@ -411,7 +428,7 @@ img.logo-img-product {
 }
 
 	.tabs ul {width:100%;flex-direction:row;flex-wrap:wrap;}
-	.tabs li {width:50% !important;}
+	.tabs li {width:50%}
 	.fix-btn-spin {
 		width: 30%;
 	}
