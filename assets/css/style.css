@@ -436,12 +436,18 @@ img.logo-img-product {
 		right: -48px;
 	}
 	/* LANDING PAGE */
-	.flash-sale-margin {
-		margin: -33px 15px;
-	}
-	span.percentage {
-		top: 89.6% !important;
-	}
+	/* .flash-sale-margin { */
+		/* margin: -33px 15px; */
+	/* } */
+.flash-sale-margin {
+    margin: -17px -28px;
+}		
+	/* span.percentage { */
+		/* top: 89.6% !important; */
+	/* } */
+span.percentage {
+    top: 87.6% !important;
+}
 	.slider-item is-slide-next {
 		width: 293px !important;
 	}

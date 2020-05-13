@@ -188,8 +188,15 @@ button.button.is-medium.buttonsave.redeem.has-text-white {
 .box-container-one.is-yellow.is-blue {
     padding: 2px;
 }
+/* .ribbon.right.is-darkred.has-text-white.flash-sale { */
+    /* width: 73px; */
+    /* margin-top: -13px; */
+/* } */
 .ribbon.right.is-darkred.has-text-white.flash-sale {
-    width: 73px;
+	background-color: #2D91EE !important;
+    margin-right: auto;
+    width: 76px;
+    margin-right: -13px;
     margin-top: -13px;
 }
 
