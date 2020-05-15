@@ -1,551 +1,569 @@
 <!DOCTYPE html>
 <html>
-   <head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>iRewards</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>	
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.1/css/selectize.min.css">
 
-		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-divider@0.2.0/dist/css/bulma-divider.min.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-ribbon@0.1.1/dist/css/bulma-ribbon.min.css">	
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css">
-		<link rel="stylesheet" href="assets/css/carousel/style.css">
-		<link rel="stylesheet" href="assets/css/sale.css">
-		<link rel="stylesheet" href="assets/css/products.css">
-		<link rel="stylesheet" href="assets/css/Shoppingcart.css">
-		<link rel="stylesheet" href="assets/css/ribbon/style.css">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>	
-		<link rel='stylesheet' href='https://sachinchoolur.github.io/lightslider/dist/css/lightslider.css'><link rel="stylesheet" href="./style.css">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iRewards</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.1/css/selectize.min.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-divider@0.2.0/dist/css/bulma-divider.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-ribbon@0.1.1/dist/css/bulma-ribbon.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/carousel/style.css">
+    <link rel="stylesheet" href="assets/css/sale.css">
+    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="stylesheet" href="assets/css/Shoppingcart.css">
+    <link rel="stylesheet" href="assets/css/ribbon/style.css">
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <link rel='stylesheet' href='https://sachinchoolur.github.io/lightslider/dist/css/lightslider.css'>
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.css">
-      <script> 
-         $(function(){
-         $("#includedContent").load("navigation-second.html"); 
-         });
-      </script> 
-	  <style>
-.column.p-27 {
-    padding: 29px;
-}
-.p-15 {
-padding-left: 15px;
-}	  
-span.select2-search.select2-search--dropdown {
-    display: none;
-}
-span.select2.select2-container.select2-container--default {
-    width: 234px !important;
-    margin-left: -78px;
-    font-size: 10px;
-}
-span.select2-selection__rendered {
-    color: #FF7A00 !important;
-}
-.wrap.select2-selection--single {
-    height: 100%;
-}
-.select2-container .wrap.select2-selection--single .select2-selection__rendered {
-    word-wrap: break-word;
-    text-overflow: inherit;
-    white-space: normal;
-}
+    <script>
+        $(function() {
+            $("#includedContent").load("navigation-second.html");
+        });
+    </script>
+    <style>
+        .column.p-27 {
+            padding: 29px;
+        }
+        
+        .p-15 {
+            padding-left: 15px;
+        }
+        
+        span.select2-search.select2-search--dropdown {
+            display: none;
+        }
+        
+        span.select2.select2-container.select2-container--default {
+            width: 234px !important;
+            margin-left: -78px;
+            font-size: 10px;
+        }
+        
+        span.select2-selection__rendered {
+            color: #FF7A00 !important;
+        }
+        
+        .wrap.select2-selection--single {
+            height: 100%;
+        }
+        
+        .select2-container .wrap.select2-selection--single .select2-selection__rendered {
+            word-wrap: break-word;
+            text-overflow: inherit;
+            white-space: normal;
+        }
+        
+        @media screen and (max-width:900px) {
+            .p-27 {
+                padding-top: 34px !important;
+                padding-left: 27px !important;
+            }
+            .p-r27 {
+                padding-right: 27px !important;
+            }
+            .column.is-12.mains {
+                padding: 0rem;
+            }
+            button#btn {
+                height: 66px;
+                width: 105px;
+            }
+            p.level-item.ki {
+                padding-top: -20% !important;
+                /* margin-right: -69%; */
+                /* margin-top: -23%; */
+                margin-top: -22% !important;
+                position: sticky;
+                float: right;
+                /* margin-left: 5px; */
+            }
+            .column.is-12.mains {
+                padding-bottom: 0rem;
+            }
+            .column.is-12.levels {
+                padding: 0rem;
+            }
+            .columns.is-mobile>.column.is-one-quarter {
+                flex: none;
+                width: 119px !important;
+            }
+        }
+        
+        @media screen and (max-width:900px) {
+            .columns.is-mobile>.column.is-one-quarter {
+                flex: none;
+                width: 119px !important;
+            }
+        }
+    </style>
+</head>
 
-		@media screen and (max-width:900px) {
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
 
-.p-27 {
-    padding-top: 34px !important;
-    padding-left: 27px !important;
-}
-.p-r27 {
-padding-right:27px !important;
-}
-.column.is-12.mains {
-    padding: 0rem;
-}
-button#btn {
-    height: 66px;
-    width: 105px;
-}
-p.level-item.ki {
-    padding-top: -20% !important;
-    /* margin-right: -69%; */
-    /* margin-top: -23%; */
-    margin-top: -22% !important;
-    position: sticky;
-    float: right;
-    /* margin-left: 5px; */
-}
-.column.is-12.mains {
-    padding-bottom: 0rem;
-}
-.column.is-12.levels {
-    padding: 0rem;
-}
-			.columns.is-mobile>.column.is-one-quarter {
-				flex: none;
-				width: 119px !important;
-			}
-
-
-		}		
-		@media screen and (max-width:900px) {
-			.columns.is-mobile>.column.is-one-quarter {
-				flex: none;
-				width: 119px !important;
-			}
-
-
-		}		
-	  </style>
-   </head>
-   <body>
-      <div id="includedContent"></div>
-	<section class="hero is-bg-blue is-bold">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title flash-sale flash-sale f-size32 m-1 has-text-white">
-          CHECKOUT
-          </h1>
-          <h2 class="subtitle">
-			<nav class="breadcrumb has-succeeds-separator is-centered" aria-label="breadcrumbs">
-			  <ul class="b-crumbs">
-				<li><a href="#"><span class="flash-sale f-size18 m-1 has-text-white">Home</span>	</a></li>
-				<li><a href="#"><span class="flash-sale f-size18 m-1 has-text-white">Shopping Cart</span>	</a></li>
-			  </ul>
-			</nav>									          
-          </h2>
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <div id="includedContent"></div>
+    <section class="hero is-bg-blue is-bold">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title flash-sale flash-sale f-size32 m-1 has-text-white">
+                    CHECKOUT
+                </h1>
+                <h2 class="subtitle">
+                    <nav class="breadcrumb has-succeeds-separator is-centered" aria-label="breadcrumbs">
+                        <ul class="b-crumbs">
+                            <li><a href="#"><span class="flash-sale f-size18 m-1 has-text-white">Home</span>	</a></li>
+                            <li><a href="#"><span class="flash-sale f-size18 m-1 has-text-white">Shopping Cart</span>	</a></li>
+                        </ul>
+                    </nav>
+                </h2>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-      </div>
-    </section>	
+    </section>
     <section class="hero is-fullheight">
 
         <div class="slick-bodyy">
-            <div class="container has-text-centered contentss" >
+            <div class="container has-text-centered contentss">
 
 
-				<div class="column is-12 box content shadow has-text-left padding-none">
-					<div class="field is-horizontal">
+                <div class="column is-12 box content shadow has-text-left padding-none">
+                    <div class="field is-horizontal">
 
-						<div class="column is-12 mains">
-                           <table class="table">
-                              <tbody>
-                                 <tr class="is-divider-full-width">
-                                    <td>							
-										<div class="columns is-multiline is-mobile">
-										  <div class="column is-one-quarter">
-											<img src="assets/images/product.png" width="100"/>
-										  </div>
-										  <div class="column p-r27">
-												<p class="has-text-black f-500 f-size14 m-1">Rick and Morty Wudda Lubba Dub Dub <br/>They'll just fall right out of my ass!<br><br>
-												<span class="has-text-gray">Size 28, Black</span>									
-											   </p>
-											   <p class="has-text-gray f-500 f-size20 is-hidden-desktop">8,000 SILVERCOINS</p>
+                        <div class="column is-12 mains">
+                            <table class="table">
+                                <tbody>
+                                    <tr class="is-divider-full-width">
+                                        <td>
+                                            <div class="columns is-multiline is-mobile">
+                                                <div class="column is-one-quarter">
+                                                    <img src="assets/images/product.png" width="100" />
+                                                </div>
+                                                <div class="column p-r27">
+                                                    <p class="has-text-black f-500 f-size14 m-1">Rick and Morty Wudda Lubba Dub Dub <br/>They'll just fall right out of my ass!<br><br>
+                                                        <span class="has-text-gray">Size 28, Black</span>
+                                                    </p>
+                                                    <p class="has-text-gray f-500 f-size20 is-hidden-desktop">8,000 SILVERCOINS</p>
 
-										  </div>
-										</div>							
+                                                </div>
+                                            </div>
 
-                                    </td>
-                                    <td class="is-hidden-mobile">
-                                       <p class="has-text-gray f-500 f-size28 flash-sale">8,000 SILVERCOINS</p>
+                                        </td>
+                                        <td class="is-hidden-mobile">
+                                            <p class="has-text-gray f-500 f-size28 flash-sale">8,000 SILVERCOINS</p>
 
-                                    </td>
+                                        </td>
 
-                                    <td>
-									<div class="columns is-multiline is-mobile p-15">
-									<div class="column">
-                                       <div class="buttons has-addons">
-                                          <button class="button" id="decrement-number">-</button>
-                                          <button class="button" id="value-quantity" class="value-quantity">1</button>
-                                          <button class="button" id="increment-number">+</button>
-                                       </div>
-									 </div>
-									 <div class="column is-half is-hidden-desktop"> 
-											<p class="has-text-orange f-500 f-size20 flash-sale">8,000 SILVERCOINS</p>
-											</div>
-									  </div>
-                                    </td>
-									<td class="is-hidden-mobile">
-                                       <p class="has-text-orange f-500 f-size28 flash-sale">8000 SILVERCOINS</p>
+                                        <td>
+                                            <div class="columns is-multiline is-mobile p-15">
+                                                <div class="column">
+                                                    <div class="buttons has-addons">
+                                                        <button class="button" id="decrement-number">-</button>
+                                                        <button class="button" id="value-quantity" class="value-quantity">1</button>
+                                                        <button class="button" id="increment-number">+</button>
+                                                    </div>
+                                                </div>
+                                                <div class="column is-half is-hidden-desktop">
+                                                    <p class="has-text-orange f-500 f-size20 flash-sale">8,000 SILVERCOINS</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="is-hidden-mobile">
+                                            <p class="has-text-orange f-500 f-size28 flash-sale">8000 SILVERCOINS</p>
 
-                                    </td>
-                                    <td class="is-hidden-mobile">
-                                       <p class="has-text-black f-500 f-size14">
-										<span class="dot">
+                                        </td>
+                                        <td class="is-hidden-mobile">
+                                            <p class="has-text-black f-500 f-size14">
+                                                <span class="dot">
 										<a href="#"><img src="assets/images/x.png" class="close-icon"/></a>
 										</span>
-										</p>
-                                    </td>
+                                            </p>
+                                        </td>
 
-                                 </tr>
+                                    </tr>
 
-                                 <tr class="is-divider-full-width">
-                                    <td>							
-										<div class="columns is-multiline is-mobile">
-										  <div class="column is-one-quarter">
-											<img src="assets/images/product.png" width="100"/>
-										  </div>
-										  <div class="column p-r27">
-												<p class="has-text-black f-500 f-size14 m-1">Rick and Morty Wudda Lubba Dub Dub <br/>They'll just fall right out of my ass!<br><br>
-												<span class="has-text-gray">Size 28, Black</span>									
-											   </p>
-											   <p class="has-text-gray f-500 f-size20 is-hidden-desktop">8,000 SILVERCOINS</p>
+                                    <tr class="is-divider-full-width">
+                                        <td>
+                                            <div class="columns is-multiline is-mobile">
+                                                <div class="column is-one-quarter">
+                                                    <img src="assets/images/product.png" width="100" />
+                                                </div>
+                                                <div class="column p-r27">
+                                                    <p class="has-text-black f-500 f-size14 m-1">Rick and Morty Wudda Lubba Dub Dub <br/>They'll just fall right out of my ass!<br><br>
+                                                        <span class="has-text-gray">Size 28, Black</span>
+                                                    </p>
+                                                    <p class="has-text-gray f-500 f-size20 is-hidden-desktop">8,000 SILVERCOINS</p>
 
-										  </div>
-										</div>							
+                                                </div>
+                                            </div>
 
-                                    </td>
-                                    <td class="is-hidden-mobile">
-                                       <p class="has-text-gray f-500 f-size28 flash-sale">8,000 SILVERCOINS</p>
+                                        </td>
+                                        <td class="is-hidden-mobile">
+                                            <p class="has-text-gray f-500 f-size28 flash-sale">8,000 SILVERCOINS</p>
 
-                                    </td>
+                                        </td>
 
-                                    <td>
-									<div class="columns is-multiline is-mobile p-15">
-									<div class="column">
-                                       <div class="buttons has-addons">
-                                          <button class="button" id="decrement-number1">-</button>
-                                          <button class="button" id="value-quantity1" class="value-quantity">1</button>
-                                          <button class="button" id="increment-number1">+</button>
-                                       </div>
-									 </div>
-									 <div class="column is-half is-hidden-desktop"> 
-											<p class="has-text-orange f-500 f-size20 flash-sale">8,000 SILVERCOINS</p>
-											</div>
-									  </div>
-                                    </td>
-									<td class="is-hidden-mobile">
-                                       <p class="has-text-orange f-500 f-size28 flash-sale">8000 SILVERCOINS</p>
+                                        <td>
+                                            <div class="columns is-multiline is-mobile p-15">
+                                                <div class="column">
+                                                    <div class="buttons has-addons">
+                                                        <button class="button" id="decrement-number1">-</button>
+                                                        <button class="button" id="value-quantity1" class="value-quantity">1</button>
+                                                        <button class="button" id="increment-number1">+</button>
+                                                    </div>
+                                                </div>
+                                                <div class="column is-half is-hidden-desktop">
+                                                    <p class="has-text-orange f-500 f-size20 flash-sale">8,000 SILVERCOINS</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="is-hidden-mobile">
+                                            <p class="has-text-orange f-500 f-size28 flash-sale">8000 SILVERCOINS</p>
 
-                                    </td>
-                                    <td class="is-hidden-mobile">
-                                       <p class="has-text-black f-500 f-size14">
-										<span class="dot">
+                                        </td>
+                                        <td class="is-hidden-mobile">
+                                            <p class="has-text-black f-500 f-size14">
+                                                <span class="dot">
 										<a href="#"><img src="assets/images/x.png" class="close-icon"/></a>
 										</span>
-										</p>
-                                    </td>
+                                            </p>
+                                        </td>
 
-                                 </tr>
+                                    </tr>
 
 
-                                 <tr class="is-divider-full-width">
-                                    <td>							
-										<div class="columns is-multiline is-mobile">
-										  <div class="column is-one-quarter">
-											<img src="assets/images/product.png" width="100"/>
-										  </div>
-										  <div class="column p-r27">
-												<p class="has-text-black f-500 f-size14 m-1">Rick and Morty Wudda Lubba Dub Dub <br/>They'll just fall right out of my ass!<br><br>
-												<span class="has-text-gray">Size 28, Black</span>									
-											   </p>
-											   <p class="has-text-gray f-500 f-size20 is-hidden-desktop">8,000 SILVERCOINS</p>
+                                    <tr class="is-divider-full-width">
+                                        <td>
+                                            <div class="columns is-multiline is-mobile">
+                                                <div class="column is-one-quarter">
+                                                    <img src="assets/images/product.png" width="100" />
+                                                </div>
+                                                <div class="column p-r27">
+                                                    <p class="has-text-black f-500 f-size14 m-1">Rick and Morty Wudda Lubba Dub Dub <br/>They'll just fall right out of my ass!<br><br>
+                                                        <span class="has-text-gray">Size 28, Black</span>
+                                                    </p>
+                                                    <p class="has-text-gray f-500 f-size20 is-hidden-desktop">8,000 SILVERCOINS</p>
 
-										  </div>
-										</div>							
+                                                </div>
+                                            </div>
 
-                                    </td>
-                                    <td class="is-hidden-mobile">
-                                       <p class="has-text-gray f-500 f-size28 flash-sale">8,000 SILVERCOINS</p>
+                                        </td>
+                                        <td class="is-hidden-mobile">
+                                            <p class="has-text-gray f-500 f-size28 flash-sale">8,000 SILVERCOINS</p>
 
-                                    </td>
+                                        </td>
 
-                                    <td>
-									<div class="columns is-multiline is-mobile p-15">
-									<div class="column">
-                                       <div class="buttons has-addons">
-                                          <button class="button" id="decrement-number2">-</button>
-                                          <button class="button" id="value-quantity2" class="value-quantity">1</button>
-                                          <button class="button" id="increment-number2">+</button>
-                                       </div>
-									 </div>
-									 <div class="column is-half is-hidden-desktop"> 
-											<p class="has-text-orange f-500 f-size20 flash-sale">8,000 SILVERCOINS</p>
-											</div>
-									  </div>
-                                    </td>
-									<td class="is-hidden-mobile">
-                                       <p class="has-text-orange f-500 f-size28 flash-sale">8000 SILVERCOINS</p>
+                                        <td>
+                                            <div class="columns is-multiline is-mobile p-15">
+                                                <div class="column">
+                                                    <div class="buttons has-addons">
+                                                        <button class="button" id="decrement-number2">-</button>
+                                                        <button class="button" id="value-quantity2" class="value-quantity">1</button>
+                                                        <button class="button" id="increment-number2">+</button>
+                                                    </div>
+                                                </div>
+                                                <div class="column is-half is-hidden-desktop">
+                                                    <p class="has-text-orange f-500 f-size20 flash-sale">8,000 SILVERCOINS</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="is-hidden-mobile">
+                                            <p class="has-text-orange f-500 f-size28 flash-sale">8000 SILVERCOINS</p>
 
-                                    </td>
-                                    <td class="is-hidden-mobile">
-                                       <p class="has-text-black f-500 f-size14">
-										<span class="dot">
+                                        </td>
+                                        <td class="is-hidden-mobile">
+                                            <p class="has-text-black f-500 f-size14">
+                                                <span class="dot">
 										<a href="#"><img src="assets/images/x.png" class="close-icon"/></a>
 										</span>
-										</p>
-                                    </td>
+                                            </p>
+                                        </td>
 
-                                 </tr>
+                                    </tr>
 
-                              </tbody>
-                           </table>
-						   <div class="column is-12 levels">
-								<div class="field horizontal">
-								
-									<nav class="level">
-									  <!-- Left side -->
-									  <div class="level-left">
-									<div class="columns is-multiline is-mobile">
-									<div class="column p-27">
-										  <p class="subtitle is-5 f-500 f-size14 flash-sale p-27">
-											Delivery Address
-										  </p>
-									 </div>
-									 <div class="column is-half is-hidden-desktop"> 
+                                </tbody>
+                            </table>
+                            <div class="column is-12 levels">
+                                <div class="field horizontal">
 
-									<div class="is-hidden-desktop">
-										<select class="select2 narrow wrap">
+                                    <nav class="level">
+                                        <!-- Left side -->
+                                        <div class="level-left">
+                                            <div class="columns is-multiline is-mobile">
+                                                <div class="column p-27">
+                                                    <p class="subtitle is-5 f-500 f-size14 flash-sale p-27">
+                                                        Delivery Address
+                                                    </p>
+                                                </div>
+                                                <div class="column is-half is-hidden-desktop">
+
+                                                    <div class="is-hidden-desktop">
+                                                        <select class="select2 narrow wrap">
 										  <option value="">Unit 1, Bangunan Bunga, Jalan Api 1, Taman Katak, Kuala Lumpur, 52100, Wilayah....</option>
 										  <option value="">Unit 1, Bangunan Bunga, Jalan Api 1, Taman Katak, Kuala Lumpur, 52100, Wilayah....</option>
 										  <option value="">Unit 1, Bangunan Bunga, Jalan Api 1, Taman Katak, Kuala Lumpur, 52100, Wilayah....</option>
 										</select>
-									</div>									
-									</div>
-									  </div>
+                                                    </div>
+                                                </div>
+                                            </div>
 
 
 
-										<div class="level-item is-hidden-mobile">
-											<div class="dropdown " id="variation-1">
-											  <div class="dropdown-trigger">
-												 <button class="button dropdown-bnone" aria-haspopup="true" aria-controls="dropdown-menu">
+                                            <div class="level-item is-hidden-mobile">
+                                                <div class="dropdown " id="variation-1">
+                                                    <div class="dropdown-trigger">
+                                                        <button class="button dropdown-bnone" aria-haspopup="true" aria-controls="dropdown-menu">
 												 <span class="has-text-orange f-500">Unit 1, Bangunan Bunga, Jalan Api 1, Taman Katak, Kuala Lumpur, 52100, Wilayah....</span>
 												 <span class="icon is-small">
 												 <i class="fas fa-caret-down"></i>
 												 </span>
 												 </button>
-											  </div>
-											  <div class="dropdown-menu" id="dropdown-menu" role="menu">
-												 <div class="dropdown-content">
-													<a href="#" class="dropdown-item">
-													<span class="has-text-orange f-500">Unit 1, Bangunan Bunga, Jalan Api 1, Taman Katak, Kuala Lumpur, 52100, Wilayah....</span>
-													</a>
-													<a class="dropdown-item">
-													<span class="has-text-orange f-500">Unit 1, Bangunan Bunga, Jalan Api 1, Taman Katak, Kuala Lumpur, 52100, Wilayah....</span>
-													</a>
-													<a href="#" class="dropdown-item is-active">
-													<span class="has-text-orange f-500">Unit 1, Bangunan Bunga, Jalan Api 1, Taman Katak, Kuala Lumpur, 52100, Wilayah....</span>
-													</a>
-													<a href="#" class="dropdown-item">
-													<span class="has-text-orange f-500">Unit 1, Bangunan Bunga, Jalan Api 1, Taman Katak, Kuala Lumpur, 52100, Wilayah....</span>
-													</a>
-													<hr class="dropdown-divider">
-													<a href="#" class="dropdown-item">
-													<span class="has-text-orange f-500">Unit 1, Bangunan Bunga, Jalan Api 1, Taman Katak, Kuala Lumpur, 52100, Wilayah....</span>
-													</a>
-												 </div>
-											  </div>
-											</div>						   
-										</div>
-									</div>
-									<div class="is-divider"></div>
-									<div class="columns is-multiline is-mobile is-hidden-desktop">
-										<div class="column is-2 p-15">
-											  <p class="subtitle is-1 f-500 f-size14 flash-sale">
-												Total
-											  </p>
-										 </div>
-										<div class="column is-narrow">
-											  <p class="subtitle is-6 has-text-orange f-500 f-size28 flash-sale">
-												16,000 Silvercoins
-											  </p>
-										 </div>
+                                                    </div>
+                                                    <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                                        <div class="dropdown-content">
+                                                            <a href="#" class="dropdown-item">
+                                                                <span class="has-text-orange f-500">Unit 1, Bangunan Bunga, Jalan Api 1, Taman Katak, Kuala Lumpur, 52100, Wilayah....</span>
+                                                            </a>
+                                                            <a class="dropdown-item">
+                                                                <span class="has-text-orange f-500">Unit 1, Bangunan Bunga, Jalan Api 1, Taman Katak, Kuala Lumpur, 52100, Wilayah....</span>
+                                                            </a>
+                                                            <a href="#" class="dropdown-item is-active">
+                                                                <span class="has-text-orange f-500">Unit 1, Bangunan Bunga, Jalan Api 1, Taman Katak, Kuala Lumpur, 52100, Wilayah....</span>
+                                                            </a>
+                                                            <a href="#" class="dropdown-item">
+                                                                <span class="has-text-orange f-500">Unit 1, Bangunan Bunga, Jalan Api 1, Taman Katak, Kuala Lumpur, 52100, Wilayah....</span>
+                                                            </a>
+                                                            <hr class="dropdown-divider">
+                                                            <a href="#" class="dropdown-item">
+                                                                <span class="has-text-orange f-500">Unit 1, Bangunan Bunga, Jalan Api 1, Taman Katak, Kuala Lumpur, 52100, Wilayah....</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="is-divider"></div>
+                                        <div class="columns is-multiline is-mobile is-hidden-desktop">
+                                            <div class="column is-2 p-15">
+                                                <p class="subtitle is-1 f-500 f-size14 flash-sale">
+                                                    Total
+                                                </p>
+                                            </div>
+                                            <div class="column is-narrow">
+                                                <p class="subtitle is-6 has-text-orange f-500 f-size28 flash-sale">
+                                                    16,000 Silvercoins
+                                                </p>
+                                            </div>
 
-									  </div>
+                                        </div>
 
 
-									<!-- Right side -->
+                                        <!-- Right side -->
 
-									<div class="level-right">
-										<p class="level-item f-500 f-size14 flash-sale  is-hidden-mobile">
-										Total
-										</p>
-										<p class="level-item  is-hidden-mobile">
-										<p class="has-text-orange f-500 f-size28 flash-sale is-hidden-mobile">16,000 Silvercoins</p>
+                                        <div class="level-right">
+                                            <p class="level-item f-500 f-size14 flash-sale  is-hidden-mobile">
+                                                Total
+                                            </p>
+                                            <p class="level-item  is-hidden-mobile">
+                                                <p class="has-text-orange f-500 f-size28 flash-sale is-hidden-mobile">16,000 Silvercoins</p>
 
-										</p>
-										<p class="level-item  is-hidden-mobile"></p>
-										<p class="level-item  is-hidden-mobile"></p>
-										<p class="level-item ki">
-											<button id="btn" class="button is-medium  buttonsave redeem has-text-white purchase"><span class="flash-sale f-size18 m-1 has-text-white">Purchase</span></button>
-										</p>
-									</div>
-								</nav>
-								</div>
+                                            </p>
+                                            <p class="level-item  is-hidden-mobile"></p>
+                                            <p class="level-item  is-hidden-mobile"></p>
+                                            <p class="level-item ki">
+                                                <button id="btn" class="button is-medium  buttonsave redeem has-text-white purchase"><span class="flash-sale f-size18 m-1 has-text-white">Purchase</span></button>
+                                            </p>
+                                        </div>
+                                    </nav>
+                                </div>
 
-							</div>
+                            </div>
 
-					</div>
-				</div>
-			</div>
+                        </div>
+                    </div>
+                </div>
 
-	
-		</div>
-	</section>
-		
-	
-      <div class="modal" id="myModal">
-         <div class="modal-background"></div>
-         <div class="modal-card">
+
+            </div>
+    </section>
+
+
+    <div class="modal" id="myModal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
             <section class="modal-card-body">
-               <div class="box content modall">
-                  <div class="is-pulled-right">
-                     <button class="delete delete" aria-label="close" data-bulma-modal="close"></button>
-                  </div>
-                  <h2 class="has-text-orange has-text-centered flash-sale">SUCCESSFUL</h2>
-                  <p class="has-text-centered has-text-gray"><span class="is-bold">50,000 Silvercoins has been deducted from your account.</span>	
-                     <br>Your order has been received, We will process your orders immediately to be shipped to your address. Delivery times may vary from 1 working day to 14 working days depending on the product as well as the location the product is being delivered from. Thank you!
-                  </p>
-                  <br><br>
-                  <button id="btn1" class="button buttonsave is-fullwidth has-text-orange">
+                <div class="box content modall">
+                    <div class="is-pulled-right">
+                        <button class="delete delete" aria-label="close" data-bulma-modal="close"></button>
+                    </div>
+                    <h2 class="has-text-orange has-text-centered flash-sale">SUCCESSFUL</h2>
+                    <p class="has-text-centered has-text-gray"><span class="is-bold">50,000 Silvercoins has been deducted from your account.</span>
+                        <br>Your order has been received, We will process your orders immediately to be shipped to your address. Delivery times may vary from 1 working day to 14 working days depending on the product as well as the location the product
+                        is being delivered from. Thank you!
+                    </p>
+                    <br><br>
+                    <button id="btn1" class="button buttonsave is-fullwidth has-text-orange">
                   <span>Continue Shopping</span>
                   </button>
-                  <br>
-                  <p class="has-text-centered has-text-orange is-bold"><span class="has-text-black">Balance:</span>8,450,000 Silvercoins	
-                  </p>
-               </div>
+                    <br>
+                    <p class="has-text-centered has-text-orange is-bold"><span class="has-text-black">Balance:</span>8,450,000 Silvercoins
+                    </p>
+                </div>
             </section>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.full.js'></script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+            <script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.full.js'></script>
 
-         </div>
-      </div>
-      <div id="footer"></div>
-   </body>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+
 </html>
 <script>
-var $select2 = $('.select2').select2({
-    containerCssClass: "wrap"
-})
-   class BulmaModal {
-   constructor(selector) {
-   this.elem = document.querySelector(selector)
-   this.close_data()
-   }
-   
-   show() {
-   this.elem.classList.toggle('is-active')
-   this.on_show()
-   }
-   
-   close() {
-   this.elem.classList.toggle('is-active')
-   this.on_close()
-   }
-   
-   close_data() {
-   var modalClose = this.elem.querySelectorAll("[data-bulma-modal='close'], .modal-background")
-   var that = this
-   modalClose.forEach(function(e) {
-   e.addEventListener("click", function() {
-   
-   that.elem.classList.toggle('is-active')
-   
-   var event = new Event('modal:close')
-   
-   that.elem.dispatchEvent(event);
-   })
-   })
-   }
-   
-   on_show() {
-   var event = new Event('modal:show')
-   
-   this.elem.dispatchEvent(event);
-   }
-   
-   on_close() {
-   var event = new Event('modal:close')
-   
-   this.elem.dispatchEvent(event);
-   }
-   
-   addEventListener(event, callback) {
-   this.elem.addEventListener(event, callback)
-   }
-   }
-   
-   var btn = document.querySelector("#btn")
-   var mdl = new BulmaModal("#myModal")
-   
-   btn.addEventListener("click", function () {
-   mdl.show()
-   $(".hero.is-fullheight").addClass("wrapper");
-   })
-   
-   mdl.addEventListener('modal:show', function() {
-   
-   console.log("opened")
-   })
-   mdl.addEventListener("modal:close", function() {
-   $(".hero.is-fullheight").removeClass("wrapper");
-   console.log("closed")
-   })
-   $('#increment-number').click(function() {
-   var value = $('#value-quantity').text();
-   value++;
-   $('#value-quantity').text(value)
-   return false;
-   });
-   $('#decrement-number').click(function() {
-   var value = $('#value-quantity').text();
-   value--;
-   $('#value-quantity').text(value)
-   return false;
-   });
-   $('#increment-number1').click(function() {
-   var value = $('#value-quantity1').text();
-   value++;
-   $('#value-quantity1').text(value)
-   return false;
-   });
-   $('#decrement-number1').click(function() {
-   var value = $('#value-quantity1').text();
-   value--;
-   $('#value-quantity1').text(value)
-   return false;
-   });
-   $('#increment-number2').click(function() {
-   var value = $('#value-quantity2').text();
-   value++;
-   $('#value-quantity2').text(value)
-   return false;
-   });
-   $('#decrement-number2').click(function() {
-   var value = $('#value-quantity2').text();
-   value--;
-   $('#value-quantity2').text(value)
-   return false;
-   });
-   $('#increment-number3').click(function() {
-   var value = $('#value-quantity3').text();
-   value++;
-   $('#value-quantity3').text(value)
-   return false;
-   });
-   $('#decrement-number3').click(function() {
-   var value = $('#value-quantity3').text();
-   value--;
-   $('#value-quantity3').text(value)
-   return false;
-   });
-</script>
-<script>
-   var dropdown = document.querySelector('#variation-1');
-   
-   dropdown.addEventListener('click', function(event) {
-   event.stopPropagation();
-   dropdown.classList.toggle('is-active');
-   });
-   
+    var $select2 = $('.select2').select2({
+        containerCssClass: "wrap"
+    })
+    class BulmaModal {
+        constructor(selector) {
+            this.elem = document.querySelector(selector)
+            this.close_data()
+        }
 
+        show() {
+            this.elem.classList.toggle('is-active')
+            this.on_show()
+        }
+
+        close() {
+            this.elem.classList.toggle('is-active')
+            this.on_close()
+        }
+
+        close_data() {
+            var modalClose = this.elem.querySelectorAll("[data-bulma-modal='close'], .modal-background")
+            var that = this
+            modalClose.forEach(function(e) {
+                e.addEventListener("click", function() {
+
+                    that.elem.classList.toggle('is-active')
+
+                    var event = new Event('modal:close')
+
+                    that.elem.dispatchEvent(event);
+                })
+            })
+        }
+
+        on_show() {
+            var event = new Event('modal:show')
+
+            this.elem.dispatchEvent(event);
+        }
+
+        on_close() {
+            var event = new Event('modal:close')
+
+            this.elem.dispatchEvent(event);
+        }
+
+        addEventListener(event, callback) {
+            this.elem.addEventListener(event, callback)
+        }
+    }
+
+    var btn = document.querySelector("#btn")
+    var mdl = new BulmaModal("#myModal")
+
+    btn.addEventListener("click", function() {
+        mdl.show()
+        $(".hero.is-fullheight").addClass("wrapper");
+    })
+
+    mdl.addEventListener('modal:show', function() {
+
+        console.log("opened")
+    })
+    mdl.addEventListener("modal:close", function() {
+        $(".hero.is-fullheight").removeClass("wrapper");
+        console.log("closed")
+    })
+    $('#increment-number').click(function() {
+        var value = $('#value-quantity').text();
+        value++;
+        $('#value-quantity').text(value)
+        return false;
+    });
+    $('#decrement-number').click(function() {
+        var value = $('#value-quantity').text();
+        value--;
+        $('#value-quantity').text(value)
+        return false;
+    });
+    $('#increment-number1').click(function() {
+        var value = $('#value-quantity1').text();
+        value++;
+        $('#value-quantity1').text(value)
+        return false;
+    });
+    $('#decrement-number1').click(function() {
+        var value = $('#value-quantity1').text();
+        value--;
+        $('#value-quantity1').text(value)
+        return false;
+    });
+    $('#increment-number2').click(function() {
+        var value = $('#value-quantity2').text();
+        value++;
+        $('#value-quantity2').text(value)
+        return false;
+    });
+    $('#decrement-number2').click(function() {
+        var value = $('#value-quantity2').text();
+        value--;
+        $('#value-quantity2').text(value)
+        return false;
+    });
+    $('#increment-number3').click(function() {
+        var value = $('#value-quantity3').text();
+        value++;
+        $('#value-quantity3').text(value)
+        return false;
+    });
+    $('#decrement-number3').click(function() {
+        var value = $('#value-quantity3').text();
+        value--;
+        $('#value-quantity3').text(value)
+        return false;
+    });
 </script>
 <script>
-   $("#footer").load("footer.html"); 
-</script>	
+    var dropdown = document.querySelector('#variation-1');
+
+    dropdown.addEventListener('click', function(event) {
+        event.stopPropagation();
+        dropdown.classList.toggle('is-active');
+    });
+</script>
+<script>
+    $("#footer").load("footer.html");
+</script>
+<script>
+    setTimeout(function() {
+        $('body').addClass('loaded');
+    }, 2000);
+</script>

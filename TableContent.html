@@ -1,97 +1,110 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>iRewards</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<style>
-.box {
-    background: #f9f9f9 none repeat scroll 0 0;
-    border: 1px solid #aaa;
-    display: table;
-    font-size: 95%;
-    margin-bottom: 1em;
-    padding: 20px;
-    width: auto;
-}
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <style>
+        .box {
+            background: #f9f9f9 none repeat scroll 0 0;
+            border: 1px solid #aaa;
+            display: table;
+            font-size: 95%;
+            margin-bottom: 1em;
+            padding: 20px;
+            width: auto;
+        }
+        
+        .toc_title {
+            font-weight: 700;
+        }
+        
+        .box li,
+        .box ul,
+        .box ul li {
+            list-style: outside none none !important;
+        }
+        
+        ul.toc_list {
+            margin-left: 10px;
+        }
+        
+        .box {
+            background: #f9f9f9 none repeat scroll 0 0;
+            border: 1px solid #aaa;
+            display: table;
+            font-size: 95%;
+            height: 447px;
+            margin-bottom: 1em;
+            padding: 20px;
+            width: 100%;
+        }
+        
+        .column.is-3 {
+            padding-top: 8%;
+        }
+    </style>
+</head>
 
-.toc_title {
-    font-weight: 700;
-}
-
-.box li, .box ul, .box ul li{
-    list-style: outside none none !important;
-}
-ul.toc_list {
-    margin-left: 10px;
-}
-.box {
-    background: #f9f9f9 none repeat scroll 0 0;
-    border: 1px solid #aaa;
-    display: table;
-    font-size: 95%;
-    height: 447px;
-    margin-bottom: 1em;
-    padding: 20px;
-    width: 100%;
-}
-.column.is-3 {
-    padding-top: 8%;
-}
-	</style>
-  </head> 
-  <body> 
+<body>
     <section class="hero is-fullheight">
         <div class="hero-body">
-            <div class="container">				
-				<div class="columns is-mobile is-centered">
-					<div class="column is-4">
-						<div class="box">
-							<p class="toc_title has-text-centered">Contents</p>
-							<br>
-							<ul class="toc_list">
-							  <li><a href="LandingPage.html" target='_blank'>1 Landing Page</a></li>
-								<li><a href="myprofile.html" target='_blank'>2 My Account</a></li>
-								<li>
-									<a href="myaccount-address.html" target='_blank'>3 My Account - My Address - No Saved Address
+            <div class="container">
+                <div class="columns is-mobile is-centered">
+                    <div class="column is-4">
+                        <div class="box">
+                            <p class="toc_title has-text-centered">Contents</p>
+                            <br>
+                            <ul class="toc_list">
+                                <li>
+                                    <a href="LandingPage.html" target='_blank'>1 Landing Page</a>
+                                    <a href="ViewAll(LatestProduct).html" target='_blank'>
+                                        <br>&emsp;- View All (Latest Products)
+                                        <br>&emsp;- View All (Top Products)
+                                    </a>
+                                </li>
+                                <li><a href="myprofile.html" target='_blank'>2 My Account</a></li>
+                                <li>
+                                    <a href="myaccount-address.html" target='_blank'>3 My Account - My Address - No Saved Address
 										<br>&emsp;- My Account - My Address - Filled
 										<br>&emsp;- My Account - My Address - (Saved)
 									</a>
-								</li>
-								<li>
-									<a href="myaccount-myaddress.html" target='_blank'>3 My Account - My Address - Saved Address
+                                </li>
+                                <li>
+                                    <a href="myaccount-myaddress.html" target='_blank'>3 My Account - My Address - Saved Address
 										<br>&emsp;- My Account - My Address - Filled
 										<br>&emsp;- My Account - My Address - (Saved)
 									</a>
-								</li>
-								<li>
-									<a href="#">4 Product
+                                </li>
+                                <li>
+                                    <a href="#">4 Product
 									</a>
-										<br><a href="Product(FlashSale).html" target='_blank'>&emsp;- Product (Flash Sale)</a>
-										<br><a href="Product(Review).html" target='_blank'>&emsp;- Product (Top Products)</a>							  
-										<br><a href="ViewAll(TopProduct+Desc).html" target='_blank'>&emsp;- View All (Top Products and Description)</a>							  
-										<br><a href="ViewAll(TopProduct+Desc)Disabled.html" target='_blank'>&emsp;- View All (Top Products and Description) Disabled</a>							  
+                                    <br><a href="Product(FlashSale).html" target='_blank'>&emsp;- Product (Flash Sale)</a>
+                                    <br><a href="Product(Review).html" target='_blank'>&emsp;- Product (Top Products)</a>
+                                    <br><a href="ViewAll(TopProduct+Desc).html" target='_blank'>&emsp;- View All (Top Products and Description)</a>
+                                    <br><a href="ViewAll(TopProduct+Desc)Disabled.html" target='_blank'>&emsp;- View All (Top Products and Description) Disabled</a>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">5 Shopping Cart
 									</a>
-								</li>
-								<li>
-									<a href="#">5 Shopping Cart
-									</a>
-										<br><a href="#"> &emsp;- Checkout</a>
-										<br><a href="ShoppingCart(Successful).html" target='_blank'>&emsp;&emsp;- Shopping Cart - Successful</a>
-										<br><a href="ShoppingCart(Failed).html" target='_blank'>&emsp;&emsp;- Shopping Cart - Failed</a>							  
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>				
+                                    <br><a href="#"> &emsp;- Checkout</a>
+                                    <br><a href="ShoppingCart(Successful).html" target='_blank'>&emsp;&emsp;- Shopping Cart - Successful</a>
+                                    <br><a href="ShoppingCart(Failed).html" target='_blank'>&emsp;&emsp;- Shopping Cart - Failed</a>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-  </body> 
+</body>
+
 </html>
-	

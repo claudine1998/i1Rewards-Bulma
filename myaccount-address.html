@@ -1,284 +1,300 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>iRewards</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/myaccont-myaddress.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/myaccont-myaddress.css">
+    <link rel="stylesheet" href="assets/css/preloader.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-divider@0.2.0/dist/css/bulma-divider.min.css">
-    <script> 
-    $(function(){
-      $("#includedContent").load("navigation-second.html"); 
-    });
-    </script> 
-	<style>
+    <script>
+        $(function() {
+            $("#includedContent").load("navigation-second.html");
+        });
+    </script>
+    <style>
 
-	</style>
-  </head> 
-  <body> 
-	<div id="includedContent"></div>
+    </style>
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <div id="includedContent"></div>
     <section class="hero is-fullheight">
         <div class="hero-body">
             <div class="container has-text-centered is-white">
                 <div class="columns myaccount">
 
-					<div class="column is-3 has-text-left is-hidden-mobile">
-						<aside class="menu">
-							<span class="flash-sale has-text-orange f-size32">0123456789</span>
-							<ul class="container-fluid menu-list">
-								<li>
-									<a class="is-bold" href="#">My Account</a>
-								</li>
-								<li>
-									<a class="is-bold is-active" href="#">My Address</a>
-								</li>
+                    <div class="column is-3 has-text-left is-hidden-mobile">
+                        <aside class="menu">
+                            <span class="flash-sale has-text-orange f-size32">0123456789</span>
+                            <ul class="container-fluid menu-list">
+                                <li>
+                                    <a class="is-bold" href="#">My Account</a>
+                                </li>
+                                <li>
+                                    <a class="is-bold is-active" href="#">My Address</a>
+                                </li>
 
-								<li>
-									<a class="is-bold" href="#">Purchase History</a>
-								</li>
-								<li>
-									<a class="is-bold" href="#">Notifications</a>
-								</li>
-								<li>
-									<a class="is-bold" href="#">My Silvercoins</a>
-								</li>
-							</ul>
-						</aside>
-  
-  
-  
-					</div>
-					<div class="is-divider-vertical is-hidden-mobile"></div>
-					<!-- MAIN MY PROFILE -->
+                                <li>
+                                    <a class="is-bold" href="#">Purchase History</a>
+                                </li>
+                                <li>
+                                    <a class="is-bold" href="#">Notifications</a>
+                                </li>
+                                <li>
+                                    <a class="is-bold" href="#">My Silvercoins</a>
+                                </li>
+                            </ul>
+                        </aside>
+
+
+
+                    </div>
+                    <div class="is-divider-vertical is-hidden-mobile"></div>
+                    <!-- MAIN MY PROFILE -->
                     <div id="myprofile" class="column is-10 has-text-left profile">
-						<div class="">
-							<div class="mains">
-								<i class="fas fa-chevron-left f-size18 is-hidden-desktop"></i>
-								<span class="is-3 flash-sale f-size32 f-500 gap-is3">MY ADDRESS</span>
-							</div>
-							<div class="is-divider"></div>
-						</div>	
-							<div class="columns is-multiline is-mobile is-hidden-desktop newaddress">
-								<div class="column is-half-touch is-one-fifth-desktop">
-									<div class="field is-horizontal">
-										<span class="column is-10 flash-sale f-size18 f-500 gap-is3">Add New Address</span>
-
-									</div> 
-								</div>
-								<div class="column is-half-touch is-one-fifth-desktop">
-									<div class="field is-horizontal">
-										<div class="column is-5">
-											<button id="adds" class="button cart has-text-white"><span class="flash-sale">ADD</span> <i class="fa fa-plus f-10" aria-hidden="true"></i></button>
-
-										</div>
-
-									</div> 
-
-								</div>
-							</div>
-
-							<div class="is-divider is-hidden-desktop"></div>
-
-
-
-
-
-
-
-
-
-						<div id="myprofile-main" class="is-hidden-mobile">
-
-							<div class="field is-horizontal">
-								<span class="column is-10 flash-sale f-size18 f-500 gap-is3">Add New Address</span>
-								<div class="field-body">
-									<div class="column is-5">
-										<button id="add" class="button cart has-text-white"><span class="flash-sale">ADD</span> <i class="fa fa-plus f-10" aria-hidden="true"></i></button>
-
-									</div>
-								</div>
-							</div>
-							<div class="is-divider"></div>
-
-						</div>
-
-						<!-- INSERT MYPROFILE -->
-						<div id="insertmyprofile" class="">
-
-
-
-							<form action="javascript:console.log('succes')">
-
-								<div class="field is-horizontal">
-									<div class="field-label is-normal">
-										<label class="label">Name<span class="is-hidden-mobile">:</span> </label>
-									</div>
-									<div class="field-body">
-										<div class="field">
-											<div class="control">
-												<input id="c_name" type="text" class="input column is-8 has-text-black f-500" required="" value="Sum Ting Wong" readonly>
-											</div>
-										</div>
-									</div>
-								</div>
-
-
-								<div class="field is-horizontal">
-									<div class="field-label is-normal">
-										<label class="label">Address: </label>
-									</div>
-									<div class="field-body">
-										<div class="field">
-											<div class="control">
-												<input id="c_address" type="text" class="input column is-8 has-text-black f-500" required="" value="">
-											</div>
-										</div>
-									</div>
-								</div>
-
-		
-	
-							<div class="field is-horizontal is-hidden-mobile">
-								<div class="field-label is-normal">
-									<label class="label">City<span class="is-hidden-mobile">:</span></label>
-								</div>
-								<div class="field-body">
-									<div class="">
-										<p class="control is-grouped">
-												<input id="c_city" type="text" class="input has-text-black f-500" required="" value="">
-										</p>
-									</div>
-									
-									<span class="input-horizontal"><label class="label"><span class="p-30">State</span><span class="is-hidden-mobile">:</span></label></span>
-									<div class="">
-										<p class="control is-grouped state">
-												<input id="c_state" type="text" class="input has-text-black f-500" required="" value="">
-										</p>
-									</div>
-
-								</div>
+                        <div class="">
+                            <div class="mains">
+                                <i class="fas fa-chevron-left f-size18 is-hidden-desktop"></i>
+                                <span class="is-3 flash-sale f-size32 f-500 gap-is3">MY ADDRESS</span>
                             </div>
+                            <div class="is-divider"></div>
+                        </div>
+                        <div class="columns is-multiline is-mobile is-hidden-desktop newaddress">
+                            <div class="column is-half-touch is-one-fifth-desktop">
+                                <div class="field is-horizontal">
+                                    <span class="column is-10 flash-sale f-size18 f-500 gap-is3">Add New Address</span>
 
-							<div class="columns is-multiline is-mobile is-hidden-desktop">
-								<div class="column is-half-touch is-one-fifth-desktop">
-									<div class="field is-horizontal">
-										<div class="field-label is-normal">
-											<label class="label">City<span class="is-hidden-mobile">:</span></label>
-										</div>
-										<div class="field-body">
-											<div class="">
-												<p class="control is-grouped">
-														<input id="c_city1" type="text" class="input has-text-black f-500" value="">
-												</p>
-											</div>
-										</div>
-									</div> 
-								</div>
-								<div class="column is-half-touch is-one-fifth-desktop">
-									<div class="field is-horizontal">
-										<div class="field-label is-normal">
-											<label class="label">State<span class="is-hidden-mobile">:</span></label>
-										</div>
-										<div class="field-body">
-											<div class="">
-												<p class="control is-grouped">
-													<input id="c_state1" type="text" class="input has-text-black f-500" value="">
-												</p>
-											</div>
-										</div>
-									</div>   
-								</div>
-							</div>
+                                </div>
+                            </div>
+                            <div class="column is-half-touch is-one-fifth-desktop">
+                                <div class="field is-horizontal">
+                                    <div class="column is-5">
+                                        <button id="adds" class="button cart has-text-white"><span class="flash-sale">ADD</span> <i class="fa fa-plus f-10" aria-hidden="true"></i></button>
 
-								<div class="field is-horizontal">
-									<div class="field-label is-normal">
-										<label class="label">Postal Code<span class="is-hidden-mobile">:</span></label>
-									</div>
-									<div class="field-body">
-										<div class="">
-											<p class="control is-grouped">
-												<input id="c_postal" type="text" class="input has-text-black f-500" required="" value="">
-											</p>
-										</div>
-									</div>
-								</div>
+                                    </div>
 
-								<div class="field is-horizontal">
-									<div class="field-label is-normal">
-										<label class="label">Mobile Number<span class="is-hidden-mobile">:</span></label>
-									</div>
-									<div class="field-body">
-										<div class="">
-											<p class="control is-grouped">
-											<input id="c_phone" type="text" class="input has-text-black f-500" required="" value="0123456789" readonly>
-											</p>
-										</div>
-									</div>
-								</div>
+                                </div>
 
-								<div class="field is-horizontal">
-									<div class="field-label is-normal"></div>
-									<div class="field-body">
-										<div class="field">
-											<div class="control is-hidden-mobile">
-												<button class="button is-medium buttonsave is-white has-text-orange"><span class="flash-sale">Cancel</span></button>
-												<button type="submit" class="button is-medium buttonsave has-text-white p-30"><span class="flash-sale">Save</span></button>
-											</div>
+                            </div>
+                        </div>
+
+                        <div class="is-divider is-hidden-desktop"></div>
 
 
-											<div class="control is-hidden-desktop">
-												<button type="submit" class="button buttonsave has-text-white is-fullwidth">
+
+
+
+
+
+
+
+                        <div id="myprofile-main" class="is-hidden-mobile">
+
+                            <div class="field is-horizontal">
+                                <span class="column is-10 flash-sale f-size18 f-500 gap-is3">Add New Address</span>
+                                <div class="field-body">
+                                    <div class="column is-5">
+                                        <button id="add" class="button cart has-text-white"><span class="flash-sale">ADD</span> <i class="fa fa-plus f-10" aria-hidden="true"></i></button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="is-divider"></div>
+
+                        </div>
+
+                        <!-- INSERT MYPROFILE -->
+                        <div id="insertmyprofile" class="">
+
+
+
+                            <form action="javascript:console.log('succes')">
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Name<span class="is-hidden-mobile">:</span> </label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input id="c_name" type="text" class="input column is-8 has-text-black f-500" required="" value="Sum Ting Wong" readonly>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Address: </label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input id="c_address" type="text" class="input column is-8 has-text-black f-500" required="" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="field is-horizontal is-hidden-mobile">
+                                    <div class="field-label is-normal">
+                                        <label class="label">City<span class="is-hidden-mobile">:</span></label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="">
+                                            <p class="control is-grouped">
+                                                <input id="c_city" type="text" class="input has-text-black f-500" required="" value="">
+                                            </p>
+                                        </div>
+
+                                        <span class="input-horizontal"><label class="label"><span class="p-30">State</span><span class="is-hidden-mobile">:</span></label>
+                                        </span>
+                                        <div class="">
+                                            <p class="control is-grouped state">
+                                                <input id="c_state" type="text" class="input has-text-black f-500" required="" value="">
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="columns is-multiline is-mobile is-hidden-desktop">
+                                    <div class="column is-half-touch is-one-fifth-desktop">
+                                        <div class="field is-horizontal">
+                                            <div class="field-label is-normal">
+                                                <label class="label">City<span class="is-hidden-mobile">:</span></label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="">
+                                                    <p class="control is-grouped">
+                                                        <input id="c_city1" type="text" class="input has-text-black f-500" value="">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-half-touch is-one-fifth-desktop">
+                                        <div class="field is-horizontal">
+                                            <div class="field-label is-normal">
+                                                <label class="label">State<span class="is-hidden-mobile">:</span></label>
+                                            </div>
+                                            <div class="field-body">
+                                                <div class="">
+                                                    <p class="control is-grouped">
+                                                        <input id="c_state1" type="text" class="input has-text-black f-500" value="">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Postal Code<span class="is-hidden-mobile">:</span></label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="">
+                                            <p class="control is-grouped">
+                                                <input id="c_postal" type="text" class="input has-text-black f-500" required="" value="">
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label is-normal">
+                                        <label class="label">Mobile Number<span class="is-hidden-mobile">:</span></label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="">
+                                            <p class="control is-grouped">
+                                                <input id="c_phone" type="text" class="input has-text-black f-500" required="" value="0123456789" readonly>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field is-horizontal">
+                                    <div class="field-label is-normal"></div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control is-hidden-mobile">
+                                                <button class="button is-medium buttonsave is-white has-text-orange"><span class="flash-sale">Cancel</span></button>
+                                                <button type="submit" class="button is-medium buttonsave has-text-white p-30"><span class="flash-sale">Save</span></button>
+                                            </div>
+
+
+                                            <div class="control is-hidden-desktop">
+                                                <button type="submit" class="button buttonsave has-text-white is-fullwidth">
 													<span class="flash-sale">Save</span>
 												</button>
 
-											</div>
+                                            </div>
 
 
-										</div>
-									</div>
-								</div>
-							</form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
 
-						</div>	
-						<!-- END INSERT MYPROFILE -->
-					</div>
-				</div>
-				<!-- END MAIN MY PROFILE -->
-			</div>
-		</div>
-	</div>
-</section>	
-<script>  
-$( "form" ).submit(function( event ) {  
-	var address= $('#c_address').val();
-	var city = $('#c_city').val();
-	var state = $('#c_state').val();
-	var postal = $('#c_postal').val();
-	var phone = $('#c_phone').val();
+                        </div>
+                        <!-- END INSERT MYPROFILE -->
+                    </div>
+                </div>
+                <!-- END MAIN MY PROFILE -->
+            </div>
+        </div>
+        </div>
+    </section>
+    <script>
+        $("form").submit(function(event) {
+            var address = $('#c_address').val();
+            var city = $('#c_city').val();
+            var state = $('#c_state').val();
+            var postal = $('#c_postal').val();
+            var phone = $('#c_phone').val();
 
-	$('input').attr('readonly',true);
-	$("input").css("border", "none");
-	$("input").css("color", "black");
-	$("input").css("font-weight", "500");
-	$("button[type=submit]").css("display", "none");
-	$("code").css("display", "none");
+            $('input').attr('readonly', true);
+            $("input").css("border", "none");
+            $("input").css("color", "black");
+            $("input").css("font-weight", "500");
+            $("button[type=submit]").css("display", "none");
+            $("code").css("display", "none");
 
-});  
-$( "#add,#adds" ).click(function() {
-	$('#myprofile-main').hide();
-	$('#insertmyprofile').show();
-	$('.newaddress').hide();
-});
-</script>  
+        });
+        $("#add,#adds").click(function() {
+            $('#myprofile-main').hide();
+            $('#insertmyprofile').show();
+            $('.newaddress').hide();
+        });
+    </script>
+    <script>
+        setTimeout(function() {
+            $('body').addClass('loaded');
+        }, 2000);
+    </script>
 
+    <div id="footer"></div>
+</body>
 
-	<div id="footer"></div>
-  </body> 
 </html>
 <script>
- $("#footer").load("footer.html"); 
+    $("#footer").load("footer.html");
 </script>

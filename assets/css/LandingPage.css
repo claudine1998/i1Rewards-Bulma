@@ -1,0 +1,147 @@
+.field.is-horizontal {
+    margin-bottom: 0rem !important;
+}
+
+.ribbon.right.is-darkred.has-text-white.flash-sale {
+    background: #2D91EE !important;
+}
+
+.lSSlideOuter .lSPager.lSpg>li a {
+    background-color: #C4C4C4 !important;
+}
+
+.lSSlideOuter .lSPager.lSpg>li.active a,
+.lSSlideOuter .lSPager.lSpg>li:hover a {
+    background-color: #fff !important;
+}
+
+.lSSlideOuter .lSPager.lSpg>li a {
+    height: 13px !important;
+    width: 13px !important;
+}
+
+ul.lSPager.lSpg {
+    margin-top: -65px !important;
+}
+
+.column.is-12.box.content.shadow.has-text-left {
+    padding: 0rem !important;
+    margin-bottom: 3%;
+}
+
+.column.top-prod.is-half-touch.is-one-fifth-desktop.discover-new-product {
+    padding: 0rem;
+    border-right: 1px solid #C4C4C4;
+}
+
+img.logo-img-product {
+    padding: 64px;
+}
+
+img.logo-img-poduct {
+    padding: 36px;
+}
+
+.carousel {
+    overflow: hidden;
+}
+
+.hero-body {
+    padding: 2rem 1.5rem !important;
+}
+
+span.star {
+    position: absolute;
+    font-size: 10px;
+}
+
+.has-text-yellow {
+    color: #FFD839;
+}
+
+.orange {
+    background: #FF8601;
+}
+
+img.logo-img-iphone {
+    padding: 27px;
+}
+
+.container.oeeee {
+    border: 1px solid;
+}
+
+.carousel {
+    overflow: hidden;
+}
+
+.m-padding a {
+    margin: 5px;
+    background: #ccc;
+    display: block;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-content,
+.card-content .title,
+.card-content .subtitle {
+    background-color: #3f3f3f;
+    color: #ccc;
+}
+
+.slider-navigation-previous {
+    left: 10px;
+}
+
+.slider-navigation-next {
+    right: 10px;
+}
+
+figure.image {
+    margin: 0rem !important;
+}
+
+.card.is-shadowless.is-slightly-rounded {
+    border-right: 1px solid #C4C4C4;
+}
+
+.is-divider,
+.is-divider-vertical {
+    margin: 0rem 0 !important;
+}
+
+.container.box.content.flashsale {
+    padding: 0rem;
+}
+
+@media only screen and (max-width:900px) {
+    .right-ribbon {
+        right: 18px !important;
+        margin-top: -3px !important;
+    }
+    p.has-text-orange.f-size29 {
+        font-size: 21px;
+    }
+    .column.is-8.lightslidermain {
+        margin: 0rem !important;
+        padding: 0rem !important;
+        /* width: 386px; */
+    }
+    .column.is-half {
+        padding: 0rem;
+        margin: 0rem !important;
+    }
+    .column.is-12.box.content.shadow.has-text-left {
+        padding: 0rem !important;
+        margin-bottom: 15%;
+    }
+    .item-1,
+    .item-2 {
+        width: 101%;
+    }
+    .slider-container .slider-item {
+        width: 165px !important;
+        flex: none;
+    }
+}
