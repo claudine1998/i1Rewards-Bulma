@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/preloader.css">
     <link rel="stylesheet" href="assets/css/Shoppingcart.css">
     <link rel="stylesheet" href="assets/css/ribbon/style.css">
+    <link rel="stylesheet" href="assets/css/viewall.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <link rel='stylesheet' href='https://sachinchoolur.github.io/lightslider/dist/css/lightslider.css'>
     <link rel="stylesheet" href="./style.css">
@@ -28,89 +29,7 @@
             $("#includedContent").load("navigation-second.html");
         });
     </script>
-    <style>
-        .field.is-horizontal.is-hidden-mobile {
-            margin-bottom: 4%;
-        }
-        
-        div#latest-products {
-            margin: 0rem !important;
-        }
-        
-        .column.is-4,
-        .column.is-2,
-        .column.is-6 {
-            padding-top: 0.4rem;
-        }
-        
-        button.is-active {
-            border-color: #FF7A00 !important;
-            color: #FF7A00 !important;
-        }
-        
-        a.pagination-link {
-            margin-top: -4px;
-            margin-bottom: 11px;
-            border-right: .1rem solid #dbdbdb !important;
-        }
-        
-        a.pagination-link.is-current {
-            background: #FF7A00 !important;
-        }
-        
-        .pagination-link.is-current {
-            color: #FFF !important;
-            background: none !important;
-            /* border: 1px solid #FF7A00 !important; */
-        }
-        
-        ul.container.menu-list {
-            list-style: none;
-        }
-        
-        .column.is-3.has-text-left.is-hidden-mobile {
-            border-right: 1px solid #dbdbdb;
-        }
-        
-        @media screen and (max-width:900px) {
-            .columns.is-mobile.is-multiline.is-centered {
-                margin: -1.3rem !important;
-            }
-            ul.pagination-list {
-                margin-left: 10px;
-                padding-right: 31px;
-            }
-        }
-        
-        @media screen and (min-width:1000px) {
-            p.column.is-2.flash-sale.f-size-20.padding-20 {
-                width: 9%;
-            }
-            .is-divider-full-width-1 {
-                margin: -33px 0px 0px !important;
-            }
-            .pagination {
-                font-size: 1rem;
-                margin: -12px -4px -11px -5px !important;
-                /* margin-top: -0.80rem; */
-            }
-            .column.is-3.has-text-left.is-hidden-mobile {
-                width: 22%;
-            }
-            .column.is-9,
-            .column.is-9-tablet {
-                flex: none;
-                width: 78% !important;
-            }
-            .column.is-one-fifth-desktop {
-                flex: none;
-                width: 20% !important;
-            }
-            .card.column {
-                padding: 0rem;
-            }
-        }
-    </style>
+
 </head>
 
 <body>
@@ -1272,12 +1191,10 @@
     $(".top-product-button").click(function() {
         $('#latest-products').hide();
         $('#top-products').show();
-        alert("top");
     });
     $(".latest-product-button").click(function() {
         $('#top-products').hide();
         $('#latest-products').show();
-        alert("latest");
     });
 </script>
 
