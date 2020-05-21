@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iRewards</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-divider@0.2.0/dist/css/bulma-divider.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/buysilvercoins-payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-steps@2.2.1/dist/css/bulma-steps.min.css">
+</head>
+
+<body>
+    <div class="box content">
+        <div class="columns">
+            <div class="column is-12 has-text-left">
+                <div class="has-text-left">
+                    <div class="is-bgblue">
+                        <div class="field is-horizontal">
+                            <div class="column is-10 has-text-left">
+                                <img src="assets/images/brpaylogo.png" />
+                            </div>
+                            <div class="column is-2 has-text-left">
+                                <i class="far fa-question-circle"></i>
+                            </div>
+                        </div>
+
+                        <div class="field is-horizontal">
+                            <div class="column is-12 has-text-centered">
+                                <p class="has-text-white f-size18 m-1">Total Amount</p>
+                                <p class="has-text-white f-500 f-size32 m-1">RM 30.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                        <div class="column is-12 has-text-left b-none">
+
+                            <div class="steps is-bgblue" id="stepsDemo">
+                                <div class="step-item is-active is-success">
+                                    <div class="step-marker"></div>
+                                    <div class="step-details">
+                                        <p class="step-title f-size14 has-text-white">Login</p>
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-marker"></div>
+                                    <div class="step-details">
+                                        <p class="step-title f-size14 has-text-white">TAC Code</p>
+                                    </div>
+                                </div>
+                                <div class="step-item">
+                                    <div class="step-marker"></div>
+                                    <div class="step-details">
+                                        <p class="step-title f-size14 has-text-white">Done</p>
+                                    </div>
+
+                                </div>
+                                <div class="steps-content">
+                                    <div class="step-content is-active">
+                                        <div class="field is-horizontal">
+                                            <div class="column is-6 has-text-left m-none">
+                                                <p class="f-size14">Please enter your username and password below</p>
+                                            </div>
+                                            <div class="column is-6 m-none">
+                                                <p class="f-size18 is-pulled-right has-text-danger is-bold">Time Out<br><span class="f-size18 is-pulled-right has-text-danger is-bold">0s</span><br></p>
+                                            </div>
+                                        </div>
+                                        <div class="field is-horizontal">
+                                            <div class="column is-6 has-text-left m-none">
+                                                <label class="label">Username</label>
+                                            </div>
+                                            <div class="column is-6 m-none">
+                                                <figure class="image is-5by1">
+                                                    <img class="" src="https://seeklogo.com/images/C/CIMB_Bank-logo-3EFEBA05DD-seeklogo.com.png">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="field-body">
+                                            <div class="field">
+                                                <div class="control">
+                                                    <input class="input" name="username" id="username" type="text" autofocus data-validate="require">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br><br>
+
+                                        <div class="field is-horizontal">
+                                            <div class="column is-6 has-text-left m-none">
+                                                <label class="label">Password</label>
+                                            </div>
+                                            <div class="column is-6 m-none">
+                                                <i class="f-size18 	fas fa-eye is-pulled-right"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="field-body">
+                                            <div class="field">
+                                                <div class="control has-icon has-icon-right">
+                                                    <input class="input" type="password" name="password" id="password" data-validate="require">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="step-content has-text-centered">
+                                        <div class="field is-horizontal">
+                                            <div class="column is-6 has-text-left m-none">
+                                                <label class="label">TAC Code</label>
+                                            </div>
+
+                                        </div>
+                                        <div class="field-body">
+                                            <div class="field">
+                                                <div class="control">
+                                                    <input class="input" name="username" id="username" type="text" autofocus data-validate="require">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="step-content has-text-centered">
+
+                                        <h1 class="title is-4">All Done!</h1>
+                                    </div>
+                                </div>
+                                <div class="steps-actions is-white">
+                                    <div class="steps-action">
+                                        <button data-nav="next" class="button is-link is-fullwidth">Next</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="has-text-centered">
+                        <a class="has-text-centered has-text-black f-500" href="#">Cancel Order</a>
+                        <p class="has-text-gray f-500 f-size14">By Using BroPay, You agree to the terms and services highlighted
+                            <a class="f-500" href="#">here</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bulma-steps@2.2.1/dist/js/bulma-steps.js"></script>
+    <script>
+        bulmaSteps.attach();
+    </script>
+</body>
+
+</html>

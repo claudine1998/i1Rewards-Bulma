@@ -516,7 +516,7 @@ div.fixed-btn {
 }
 
 .has-text-orange {
-    color: #FF7A00;
+    color: #FF7A00 !important;
 }
 
 .shadow-nav {
